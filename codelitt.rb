@@ -16,7 +16,7 @@ class Codelitt < Sinatra::Base
     serve '/image', from: 'app/image'    # Default
 
     css :cssapp, [
-      '/css/*.css'
+      '/css/*.css',
     ]
               
     js :jsapp, [

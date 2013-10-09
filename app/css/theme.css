@@ -1,3 +1,16 @@
 body { 
-  padding-top: 70px; 
+  padding-top: 50px; 
 }
+
+.main {
+}
+
+.navbar-nav>li>a {
+  color: #0093D0 !important;
+}
+
+/*footer {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}*/

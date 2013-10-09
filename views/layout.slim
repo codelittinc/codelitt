@@ -7,34 +7,40 @@ html
     meta name="description" content="codelitt helps companies innovate like startups and works with them to prototype and build new technology. Our specialty is in emerging technologies and media."
     meta name="viewport" content="width=device-width, initial-scale=1.0"
     link rel="icon" type="image/ico" href="favicon.ico"
+    link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet"
     == css :cssapp
   
-  header
-    nav class="navbar navbar-default navbar-fixed-top" role="navigation"
-      div class="container"
-        div class="nav-header"
-          div class="navbar-collapse collapse" 
-            button type="button" class="navbar-toggle" data-toggle="collapse" data-target="navbar-ex1-collapse"
-              span class="sr-only"
-              span class="icon-bar"
-              span class="icon-bar"
-              span class="icon-bar"
-            a class="navbar-brand" href="/" codelitt
-            ul class="nav navbar-nav navbar-right"
-              li 
-                a href="/" home
-              li  
-                a href="/technologies" technologies
-              li  
-                a href="/contact" contact
-  
   body 
+    header
+      nav class="navbar navbar-default navbar-fixed-top" role="navigation"
+        div class="container"
+          div class="nav-header"
+            div class="navbar-collapse collapse" 
+              button type="button" class="navbar-toggle" data-toggle="collapse" data-target="navbar-ex1-collapse"
+                span class="sr-only"
+                span class="icon-bar"
+                span class="icon-bar"
+                span class="icon-bar"
+              a class="navbar-brand" href="/" codelitt
+              ul class="nav navbar-nav navbar-right"
+                li 
+                  a href="/" home
+                li
+                  a href="/services" services
+                li  
+                  a href="/technologies" technologies
+                li  
+                  a href="/contact" contact
+  
     div class="main"
       == yield
-      ==js :jsapp
-  
-  footer
-
+      footer class="container"
+        p class="pull-right"
+          a href="#" Back to top
+        p &copy; 2013 codelitt, Inc. &middot;
+    script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
+    script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js" 
+    == js :jsapp
 
 
 
