@@ -32,5 +32,17 @@ class Codelitt < Sinatra::Base
     slim :index
   end
 
+  get '/technologies' do
+    slim :technologies
+  end
+
+  get '/services' do
+    slim :services
+  end
+
+  get '/contact' do
+    slim :contact
+  end
+
 run! if app_file == $0 
 end

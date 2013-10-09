@@ -5,8 +5,12 @@ body {
 .main {
 }
 
-.navbar-nav>li>a {
-  color: #0093D0 !important;
+/* Making the nav bar totally wicked awesome */
+.navbar-default .navbar-nav>li>a {
+  color: #0093d0;
+}
+.navbar-default .navbar-brand {
+  color: #0093d0;
 }
 
 /*footer {
