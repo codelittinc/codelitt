@@ -9,11 +9,11 @@ set :rack_env, :production
 
 #general info
 set :user, 'deploy'
-set :domain, 'www.codelitt.com'
+set :domain, '198.211.112.227'
 set :applicationdir, "/var/www/codelitt"
 set :scm, 'git'
 set :application, "codelitt"
-set :repository,  "git@github.com:codelitt/codelitt"
+set :repository,  "git@github.com:codelitt/codelitt.git"
 set :branch, 'master'
 set :git_shallow_clone, 1
 set :scm_verbose, true
