@@ -12,7 +12,7 @@ set :user, 'deploy'
 set :domain, 'www.codelitt.com'
 set :applicationdir, "/var/www/codelitt"
 set :scm, 'git'
-set :application, "uber_url_shortener"
+set :application, "codelitt"
 set :repository,  "git@github.com:codelitt/codelitt"
 set :branch, 'master'
 set :git_shallow_clone, 1
