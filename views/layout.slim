@@ -1,0 +1,40 @@
+doctype html
+html
+  head
+    title codelitt technology innovation
+    meta name="keywords" content="codelitt, technology innovation, technology, technologist, consulting, web, mobile, apps, custom operating systems"
+    meta name="author" content="Cody Littlewood"
+    meta name="description" content="codelitt helps companies innovate like startups and works with them to prototype and build new technology. Our specialty is in emerging technologies and media."
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+    link rel="icon" type="image/ico" href="favicon.ico"
+    == css :cssapp
+  
+  header
+    nav class="navbar navbar-default navbar-fixed-top" role="navigation"
+      div class="container"
+        div class="nav-header"
+          div class="navbar-collapse collapse" 
+            button type="button" class="navbar-toggle" data-toggle="collapse" data-target="navbar-ex1-collapse"
+              span class="sr-only"
+              span class="icon-bar"
+              span class="icon-bar"
+              span class="icon-bar"
+            a class="navbar-brand" href="/" codelitt
+            ul class="nav navbar-nav navbar-right"
+              li 
+                a href="/" home
+              li  
+                a href="/technologies" technologies
+              li  
+                a href="/contact" contact
+  
+  body 
+    div class="main"
+      == yield
+      ==js :jsapp
+  
+  footer
+
+
+
+
