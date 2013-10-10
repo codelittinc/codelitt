@@ -13,24 +13,24 @@ html
   body 
     header
       nav class="navbar navbar-default navbar-fixed-top" role="navigation"
-        div class="container"
+        div class="container" 
           div class="nav-header"
-            div class="navbar-collapse collapse" 
-              button type="button" class="navbar-toggle" data-toggle="collapse" data-target="navbar-ex1-collapse"
-                span class="sr-only"
-                span class="icon-bar"
-                span class="icon-bar"
-                span class="icon-bar"
-              a class="navbar-brand" href="/" codelitt
-              ul class="nav navbar-nav navbar-right"
-                li 
-                  a href="/" home
-                li
-                  a href="/services" services
-                li  
-                  a href="/technologies" technologies
-                li  
-                  a href="/contact" contact
+            button type="button" class="navbar-toggle" data-toggle="collapse" data-target="navbar-ex1-collapse"
+              span class="sr-only" Toggle navigation
+              span class="icon-bar"
+              span class="icon-bar"
+              span class="icon-bar"
+            a class="navbar-brand" href="/" codelitt
+          div class="collapse navbar-collapse navbar-ex1-collapse"  
+            ul class="nav navbar-nav navbar-right"
+              li 
+                a href="/" home
+              li
+                a href="/services" services
+              li  
+                a href="/technologies" technologies
+              li  
+                a href="/contact" contact
   
     div class="main"
       == yield

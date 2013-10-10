@@ -1,5 +1,6 @@
 body { 
   padding-top: 50px; 
+  height: 100%;
 }
 
 .main {
@@ -13,8 +14,6 @@ body {
   color: #0093d0;
 }
 
-/*footer {
-  max-width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-}*/
+footer {
+  bottom:0;
+}
