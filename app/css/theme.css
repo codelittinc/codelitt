@@ -1,20 +1,10 @@
-
-
-@font-face
-{
-font-family: "Proxima Nova";
-src: url(/fonts/ProximaNova-Regular.otf);
-}
-
 body { 
   padding-top: 50px; 
   height: 100%;
-  color: #17b4ff; /* text color */
-  font-family: "Proxima Nova";
+  color: #fff; /* text color */
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-.main {
-}
 
 /* Making the nav bar totally wicked awesome */
 .navbar-default .navbar-nav>li>a {
@@ -33,6 +23,7 @@ body {
 
 .navbar {
   background: #141c2c;
+  border: none;
 }
 
 .twitter {
@@ -59,8 +50,93 @@ body {
   background: url('/images/Facebookhover.png');
   background-repeat: no-repeat;
   background-position: center;
-
-footer {
-  bottom:0;
 }
 
+
+.main {
+  margin-top:30px;
+}
+
+/* homepage */
+.webuildstartups {
+  background: url('/images/Background_webuildstartups.png');
+  height:574px;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-right:0px;
+  margin-left: 0px;
+}
+
+.webuildstartups h1 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 100;
+  width: 100px;
+}
+
+.buildbuffer {
+  height:200px;
+}
+
+.startupincubator {
+  background: url('/images/Background_startupincubator.png');
+  height:755px;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-right:0px;
+  margin-left: 0px;
+}
+
+.weworkwith {
+  padding-top:13%;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 100;
+  text-align: center;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.wearestartup {
+  margin-left:20%;
+  margin-right:20%;
+  padding-top:20%;
+  color: #0093d0;
+  font-size: 30px;
+  font-weight: 100;
+  text-align: center;
+  width:200px;
+}
+
+.startup {
+  margin-left:20%;
+  margin-right:20%;
+  font-size: 30px;
+  font-weight: 100;
+  text-align: center;
+  width:200px;
+}
+
+/* attempts at the footer. needs to be fixed still */
+.footer {
+  padding-top: 5px;
+} 
+
+.footertext {
+  color: #6c6d70;
+  font-size: 12px;
+}
+
+.footerlink {
+  color: #0093d0;
+  font-size: 13pt;
+}
+
+.footerlink:hover {
+  color: #45e6dd;
+  font-size: 13pt;
+  margin-right: 10px;
+}
