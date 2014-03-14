@@ -1,6 +1,16 @@
+
+
+@font-face
+{
+font-family: "Proxima Nova";
+src: url(/fonts/ProximaNova-Regular.otf);
+}
+
 body { 
   padding-top: 50px; 
   height: 100%;
+  color: #17b4ff; /* text color */
+  font-family: "Proxima Nova";
 }
 
 .main {
@@ -9,11 +19,48 @@ body {
 /* Making the nav bar totally wicked awesome */
 .navbar-default .navbar-nav>li>a {
   color: #0093d0;
+  font-size: 13pt;
 }
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: #45e6dd;
+  font-size: 13pt;
+}
+
 .navbar-default .navbar-brand {
   color: #0093d0;
 }
 
+.navbar {
+  background: #141c2c;
+}
+
+.twitter {
+  background: url('/images/Twitter.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 30%;
+}
+
+.twitter:hover {
+  background: url('/images/Twitterhover.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.facebook {
+  background: url('/images/Facebook.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 30%;
+}
+
+.facebook:hover {
+  background: url('/images/Facebookhover.png');
+  background-repeat: no-repeat;
+  background-position: center;
+
 footer {
   bottom:0;
 }
+

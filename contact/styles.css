@@ -1,0 +1,277 @@
+ body {
+	margin: 0;
+	padding: 0;
+ }
+ 
+ #background 
+{ 
+	 left: 0px; 
+	 top: 0px; 
+	 position: relative; 
+	 margin-left: auto; 
+	 margin-right: auto; 
+	 width: 1000px;
+	 height: 936px; 
+	 overflow: hidden;
+	 z-index:0;
+	} 
+
+ #Background 
+{ 
+	 left: 0px; 
+	 top: 786px; 
+	 position: absolute; 
+	 width: 1000px;
+	 height: 150px;
+	 z-index:1;
+} 
+
+ #Arrow 
+{ 
+	 left: 878px; 
+	 top: 859px; 
+	 position: absolute; 
+	 width: 15px;
+	 height: 8px;
+	 z-index:2;
+} 
+
+ #BACKTOTOP 
+{ 
+	 left: 903px; 
+	 top: 858px; 
+	 position: absolute; 
+	 width: 95px;
+	 height: 9px;
+	 z-index:3;
+} 
+
+ #Arrow_0 
+{ 
+	 left: 878px; 
+	 top: 859px; 
+	 position: absolute; 
+	 width: 15px;
+	 height: 8px;
+	 z-index:4;
+} 
+
+ #BACKTOTOP_0 
+{ 
+	 left: 903px; 
+	 top: 858px; 
+	 position: absolute; 
+	 width: 95px;
+	 height: 9px;
+	 z-index:5;
+} 
+
+ #Codelittlogo 
+{ 
+	 left: 468px; 
+	 top: 836px; 
+	 position: absolute; 
+	 width: 63px;
+	 height: 50px;
+	 z-index:6;
+} 
+
+ #hellocodelittcom 
+{ 
+	 left: 172px; 
+	 top: 860px; 
+	 position: absolute; 
+	 width: 109px;
+	 height: 9px;
+	 z-index:7;
+} 
+
+ #2014CodelittIncubato 
+{ 
+	 left: 0px; 
+	 top: 859px; 
+	 position: absolute; 
+	 width: 145px;
+	 height: 9px;
+	 z-index:8;
+} 
+
+ #Background_0 
+{ 
+	 left: 0px; 
+	 top: 100px; 
+	 position: absolute; 
+	 width: 1000px;
+	 height: 686px;
+	 z-index:9;
+} 
+
+ #Wanttoworktogetherem 
+{ 
+	 left: 296px; 
+	 top: 251px; 
+	 position: absolute; 
+	 width: 408px;
+	 height: 126px;
+	 z-index:10;
+} 
+
+ #Background_1 
+{ 
+	 left: 0px; 
+	 top: 0px; 
+	 position: absolute; 
+	 width: 1000px;
+	 height: 100px;
+	 z-index:11;
+} 
+
+ #Twitter 
+{ 
+	 left: 976px; 
+	 top: 39px; 
+	 position: absolute; 
+	 width: 23px;
+	 height: 23px;
+	 z-index:12;
+} 
+
+ #Twitter_0 
+{ 
+	 left: 976px; 
+	 top: 39px; 
+	 position: absolute; 
+	 width: 23px;
+	 height: 23px;
+	 z-index:13;
+} 
+
+ #Facebook 
+{ 
+	 left: 935px; 
+	 top: 39px; 
+	 position: absolute; 
+	 width: 23px;
+	 height: 23px;
+	 z-index:14;
+} 
+
+ #Facebook_0 
+{ 
+	 left: 935px; 
+	 top: 39px; 
+	 position: absolute; 
+	 width: 23px;
+	 height: 23px;
+	 z-index:15;
+} 
+
+ #Underline 
+{ 
+	 left: 840px; 
+	 top: 67px; 
+	 position: absolute; 
+	 width: 65px;
+	 height: 2px;
+	 z-index:16;
+} 
+
+ #CONTACT 
+{ 
+	 left: 839px; 
+	 top: 47px; 
+	 position: absolute; 
+	 width: 67px;
+	 height: 9px;
+	 z-index:17;
+} 
+
+ #TECHNOLOGIES 
+{ 
+	 left: 702px; 
+	 top: 47px; 
+	 position: absolute; 
+	 width: 111px;
+	 height: 9px;
+	 z-index:18;
+} 
+
+ #TECHNOLOGIES_0 
+{ 
+	 left: 702px; 
+	 top: 47px; 
+	 position: absolute; 
+	 width: 111px;
+	 height: 9px;
+	 z-index:19;
+} 
+
+ #Underline_0 
+{ 
+	 left: 703px; 
+	 top: 67px; 
+	 position: absolute; 
+	 width: 110px;
+	 height: 2px;
+	 z-index:20;
+} 
+
+ #TECHNOLOGIES_1 
+{ 
+	 left: 702px; 
+	 top: 47px; 
+	 position: absolute; 
+	 width: 111px;
+	 height: 9px;
+	 z-index:21;
+} 
+
+ #SERVICES 
+{ 
+	 left: 609px; 
+	 top: 47px; 
+	 position: absolute; 
+	 width: 69px;
+	 height: 9px;
+	 z-index:22;
+} 
+
+ #SERVICES_0 
+{ 
+	 left: 609px; 
+	 top: 47px; 
+	 position: absolute; 
+	 width: 69px;
+	 height: 9px;
+	 z-index:23;
+} 
+
+ #Underline_1 
+{ 
+	 left: 610px; 
+	 top: 67px; 
+	 position: absolute; 
+	 width: 69px;
+	 height: 2px;
+	 z-index:24;
+} 
+
+ #SERVICES_1 
+{ 
+	 left: 609px; 
+	 top: 47px; 
+	 position: absolute; 
+	 width: 69px;
+	 height: 9px;
+	 z-index:25;
+} 
+
+ #CodelittLogo 
+{ 
+	 left: 0px; 
+	 top: 22px; 
+	 position: absolute; 
+	 width: 72px;
+	 height: 56px;
+	 z-index:26;
+} 

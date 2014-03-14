@@ -13,7 +13,7 @@ class Codelitt < Sinatra::Base
   assets do
     serve '/js',     from: 'app/js'        # Default
     serve '/css',    from: 'app/css'       # Default
-    serve '/image', from: 'app/image'    # Default
+    serve '/images', from: 'app/images'    # Default
 
     css :cssapp, [
       '/css/*.css',
@@ -47,7 +47,7 @@ class Codelitt < Sinatra::Base
   get(/.+/) do
     send_sinatra_file(request.path) {404}
   end
-
+  
   not_found do
     send_file(File.join(File.dirname(__FILE__), 'public', '404.html'), {:status => 404})
   end
