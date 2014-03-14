@@ -120,6 +120,27 @@ body {
   width:200px;
 }
 
+.ethostext h2 {
+  color: #6c6d70;
+  font-size: 40px;
+  font-weight: 100;
+  width:450px;
+  padding-top:50px;
+  padding-bottom: 50px;
+}
+
+
+.ethos {
+  background: url('/images/Background_ethos.png');
+  height:742px;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right:0px;
+  margin-left: 0px;
+}
+
+
 /* attempts at the footer. needs to be fixed still */
 .footer {
   padding-top: 5px;
