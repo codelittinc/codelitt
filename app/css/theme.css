@@ -138,7 +138,6 @@ body {
   background-position: center;
   margin-right:0px;
   margin-left: 0px;
-  margin-bottom:25%;
 }
 
 
@@ -172,7 +171,7 @@ body {
 
 .philo {
   background: url('/images/Background_philo.png');
-  height:843px;
+  height: 843px;
   max-width: 100%;
   background-repeat: no-repeat;
   background-position: center;
