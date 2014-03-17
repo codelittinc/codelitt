@@ -123,7 +123,7 @@ body {
 .ethostext h2 {
   color: #6c6d70;
   font-size: 40px;
-  font-weight: 100;
+  font-weight: 200;
   width:450px;
   padding-top:50px;
   padding-bottom: 50px;
@@ -138,6 +138,64 @@ body {
   background-position: center;
   margin-right:0px;
   margin-left: 0px;
+  margin-bottom:25%;
+}
+
+
+.ethosheadleft {
+  color: #17b5ff;
+  text-align: right;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.ethosparaleft {
+  color: #6d6e70;
+  text-align: right;
+  font-size: 24px;
+  font-weight: 200;
+}
+
+.ethosheadright {
+  color: #17b5ff;
+  text-align: left;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.ethospararight {
+  color: #6d6e70;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 200;
+}
+
+.philo {
+  background: url('/images/Background_philo.png');
+  height:843px;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-right:0px;
+  margin-left: 0px;
+}
+
+.philohead {
+  color: #17b5ff;
+  text-align: left;
+  font-size: 30px;
+  font-weight: 100;
+  padding-top: 40%;
+  margin-left: 15%;
+}
+
+.philopara {
+  color: #fff;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 100;
+  margin-left: 15%;
 }
 
 
@@ -149,6 +207,17 @@ body {
 .footertext {
   color: #6c6d70;
   font-size: 12px;
+}
+
+.arrow {
+  background: url('/images/Arrow.png');
+  height:8px;
+  width: 15px;
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-right:15%;
+  margin-left: 0px;
+  padding-top: 5px;
 }
 
 .footerlink {
