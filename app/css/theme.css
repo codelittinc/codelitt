@@ -63,7 +63,6 @@ body {
   background: url('/images/Background_webuildstartups.png');
   height:574px;
   max-width: 100%;
-  margin-top:10%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -287,8 +286,8 @@ body {
 
 .identify_para {
   padding-top: 15%;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 19%;
+  padding-right: 19%;
 }
 
 .identify_para h2 {
