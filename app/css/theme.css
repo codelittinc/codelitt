@@ -54,7 +54,7 @@ body {
 
 
 .main {
-  margin-top:30px;
+  margin-top:0%;
 }
 
 /* homepage */
@@ -62,6 +62,7 @@ body {
   background: url('/images/Background_webuildstartups.png');
   height:574px;
   max-width: 100%;
+  margin-top:10%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -196,6 +197,75 @@ body {
   font-weight: 100;
   margin-left: 15%;
 }
+
+/* services page */
+
+.background_coretop {
+  /*background: url('/images/Background_coretop.png');*/
+  height: 100px;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #1f2d46;
+  margin-right:0px;
+  margin-left: 0px;
+}
+
+.background_core {
+  background: url('/images/Background_core.png');
+  height: 747px;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-right:0px;
+  margin-left: 0px;
+}
+
+.core h1 {
+  color: #a7a7a7;
+  font-size: 40px;
+  padding-top: 10%;
+  font-weight: 200;
+  text-align: center;
+}
+
+.core_graphic {
+  background: url('/images/core_graphic.png');
+  height: 88px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right:0px;
+  margin-left: 0px;
+  padding-top: 31%;
+}
+
+.core_list {
+  padding-top: 0%;
+  padding-left: 22%;
+  width: 100%;
+}
+
+.core_list h2 {
+  color: #fff;
+  font-size: 23px;
+  font-weight: 200;
+
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  -moz-border-radius: 50%; 
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #fff;
+  display: none;
+}
+
+
 
 
 /* attempts at the footer. needs to be fixed still */
