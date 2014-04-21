@@ -32,14 +32,14 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   margin-top: 30%;
-  
+  display:block;
 }
 
 .twitter:hover {
   background: url('/images/Twitterhover.png');
   background-repeat: no-repeat;
   background-position: center;
-  
+  display:block;
 }
 
 .facebook {
@@ -54,7 +54,7 @@ body {
   background: url('/images/Facebookhover.png');
   background-repeat: no-repeat;
   background-position: center;
-  
+  display:block;
 }
 
 
@@ -72,7 +72,7 @@ body {
   background-size: cover;
   margin-right:0px;
   margin-left: 0px;
-  
+  display:block;
 }
 
 .webuildstartups h1 {
@@ -95,7 +95,7 @@ body {
   background-size: cover;
   margin-right:0px;
   margin-left: 0px;
-  
+  display:block;
 }
 
 .weworkwith {
@@ -145,7 +145,7 @@ body {
   background-position: center;
   margin-right:0px;
   margin-left: 0px;
-  
+  display:block;
 }
 
 
@@ -186,7 +186,7 @@ body {
   background-size: cover;
   margin-right:0px;
   margin-left: 0px;
-  
+  display:block;
 }
 
 .philohead {
@@ -218,7 +218,7 @@ body {
   background-color: #1f2d46;
   margin-right:0px;
   margin-left: 0px;
-  
+  display:block;
 }
 
 .background_core {
@@ -230,7 +230,7 @@ body {
   background-size: cover;
   margin-right:0px;
   margin-left: 0px;
-  
+  display:block;
 }
 
 .core h1 {
@@ -250,7 +250,7 @@ body {
   margin-right:0px;
   margin-left: 0px;
   padding-top: 31%;
-  
+  display:block;
 }
 
 .core_list {
@@ -292,7 +292,7 @@ body {
   background-position: center;
   margin-right:0px;
   margin-left: 0px;
-  
+  display:block;
 }
 
 .identify_para {
@@ -326,7 +326,7 @@ body {
   padding-right:15%;
   margin-left: 0px;
   padding-top: 5px;
-  
+  display:block;
 }
 
 .footerlink {

@@ -43,6 +43,10 @@ after "deploy:cold" do
   admin.nginx_restart
 end
 
+before "deploy:restart" do
+  symlinkassets.symlink
+end 
+
 # As this isn't a rails app, we don't start and stop the app invidually
 namespace :deploy do
   desc "Not starting as we're running passenger."
@@ -70,5 +74,15 @@ namespace :admin do
   desc "Restart nginx."
   task :nginx_restart, roles: :app do
     run "#{sudo} /etc/init.d/nginx restart"
+  end
+end
+
+#symlink css assets from app folder to public folder
+namespace :symlinkassets do
+  desc "symlink css assets"
+  task :symlink do
+    run "rm -rf #{release_path}/public"
+    run "mkdir -p #{release_path}/public"
+    run "ln -s #{release_path}/app/* #{release_path}/public/"
   end
 end
