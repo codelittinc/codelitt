@@ -9,7 +9,7 @@ set :rack_env, :production
 
 #general info
 set :user, 'deploy'
-set :domain, '198.211.112.227'
+set :domain, '107.170.33.213'
 set :applicationdir, "/var/www/codelitt"
 set :scm, 'git'
 set :application, "codelitt"
