@@ -1,0 +1,26 @@
+%nav.navbar.navbar-default.codelitt-head{role: "navigation"}
+  .container-fluid.toggle-header
+    / Brand and toggle get grouped for better mobile display
+    .navbar-header
+      %button.navbar-toggle{"data-target" => "#nav-right", "data-toggle" => "collapse", type: "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.navbar-brand.codelitt-logo{href: "#"}
+        = image_tag("header/Logo-Header.svg", :alt => "logo")
+    / Collect the nav links, forms, and other content for toggling
+    #nav-right.collapse.navbar-collapse
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          %a{href: "#"} SERVICES
+        %li
+          %a{href: "#"} TECHNOLOGIES
+        %li
+          %a{href: "#"} CONTACT
+        %li
+          %a{href: "#"}
+            = image_tag("header/FB-Normal.svg", :alt => "FB")
+        %li
+          %a{href: "#"}
+            = image_tag("header/TW-Normal.svg", :alt => "TW")
