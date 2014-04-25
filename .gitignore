@@ -17,4 +17,4 @@
 
 # Ignore cache
 .sass-cache
-.stylesheets/*.css
+public/stylesheets/*
