@@ -7,7 +7,13 @@ gem 'rails', '4.0.4'
 gem 'sqlite3'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.2'
+gem 'sass', '3.3'
+
+# Use compass for awesomeness
+gem 'compass'
+
+# Use Breakpoint for media queries
+gem 'breakpoint', '~> 2.4.0'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -38,8 +44,11 @@ end
 # Use unicorn as the app server
 # gem 'unicorn'
 
+#Use haml instead of html
+gem 'haml'
+
 # Use Capistrano for deployment
-# gem 'capistrano', group: :development
+gem 'capistrano', group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
