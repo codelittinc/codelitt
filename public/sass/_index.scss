@@ -1,10 +1,41 @@
-.codelitt-big {
-  background: #151c2d;
+body {
+  height: 100%;
   width: 100%;
+}
+
+.codelitt-big {
+  margin: -20px 0 0;
   padding: 0;
-  margin: -20px 0 0 0;
+  width: 100%;
+  height: 400px;
+
+  background: $codelitt-dark;
+
+  @include breakpoint($sm) {
+    height: 80%;
+    width: auto;
+  }
 }
 
 .codelitt-big img {
+  height: 100%;
   width: 100%;
+}
+
+.we-build {
+  position: relative;
+  color: #fff;
+
+  @include breakpoint($sm) {
+    position: absolute;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    top: 45%;
+    left: 30%;
+    width: 15%;
+    font-size: 5vw;
+    font-weight: lighter;
+  }
+
 }
