@@ -7,7 +7,7 @@ body {
   margin: -20px 0 0;
   padding: 0;
   width: 100%;
-  height: 400px;
+  height: 300px;
 
   background: $codelitt-dark;
 
@@ -25,17 +25,17 @@ body {
 .we-build {
   position: relative;
   color: #fff;
+  margin: 0;
+  padding: 0;
+  top: -58%;
+  left: 30%;
+  width: 15%;
+  font-size: 5vw;
+  font-weight: lighter;
 
   @include breakpoint($sm) {
     position: absolute;
-    color: #fff;
-    margin: 0;
-    padding: 0;
     top: 45%;
-    left: 30%;
-    width: 15%;
-    font-size: 5vw;
-    font-weight: lighter;
   }
 
 }
