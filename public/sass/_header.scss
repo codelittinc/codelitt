@@ -1,16 +1,25 @@
 .codelitt-head {
   background: #151c2d;
   border: 0;
+  border-bottom: 2px;
+  border-color: #4f5052;
   border-radius: 0;
+  border-style: solid;
 
-
-  @include breakpoint(768px) {
+  @include breakpoint($sm) {
     min-height: 90px;
   }
 
 }
 
-.toggle-header {
+.codelitt-logo img {
+  margin: -10px;
+  width: 40px;
+
+  @include breakpoint($sm) {
+    margin: auto;
+    width: auto;
+  }
 }
 
 #nav-right {
