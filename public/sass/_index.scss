@@ -15,11 +15,11 @@ body {
     height: 80%;
     width: auto;
   }
-}
 
-.codelitt-big img {
-  height: 100%;
-  width: 100%;
+  img {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 .we-build {
@@ -38,4 +38,70 @@ body {
     top: 45%;
   }
 
+}
+
+.cubes-big {
+  background: $codelitt-light;
+  height: 100%;
+  width: 100%;
+}
+
+.cubes {
+  position: relative;
+  top: -48px;
+  left: 80px;
+  height: 100%;
+  width: 100%;
+
+  img {
+    width: 60%;
+  }
+}
+
+.we-work {
+  color: #fff;
+  text-align: center;
+  font-weight: lighter;
+  position: relative;
+  top: -10%;
+  width: 90%;
+  margin: 0 auto;
+  span {
+    color: $light-blue;
+  }
+}
+
+.cube {
+  position: relative;
+  top: -50px;
+  z-index: 1;
+
+  img {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+
+.we-are-innovation {
+  margin: 0 auto;
+  width: 158px;
+  position: relative;
+  top: -300px;
+
+  .we-are,
+  .innovation {
+    font-weight: lighter;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+.we-are {
+  color: $light-blue;
+}
+
+.innovation {
+  color: #fff;
 }
