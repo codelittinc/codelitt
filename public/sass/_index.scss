@@ -48,13 +48,13 @@ body {
 
 .cubes {
   position: relative;
-  top: -48px;
-  left: 80px;
+  top: -52px;
   height: 100%;
-  width: 100%;
+  width: 80%;
+  margin-left: 80px;
 
   img {
-    width: 60%;
+    width: 80%;
   }
 }
 
@@ -85,10 +85,10 @@ body {
 
 
 .we-are-innovation {
-  margin: 0 auto;
+  margin: -84px auto;
   width: 158px;
   position: relative;
-  top: -300px;
+  top: -216px;
 
   .we-are,
   .innovation {
