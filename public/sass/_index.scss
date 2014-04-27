@@ -107,8 +107,8 @@ body {
 
 .learn {
   color: #626365;
-  font-weight: 900;
   font-size: 9pt;
+  font-weight: 900;
   text-align: center;
 }
 
@@ -125,71 +125,39 @@ body {
 
   img {
     display: block;
-    margin: 0 auto;
     height: 550px;
+    margin: 0 auto;
+  }
+}
+
+.ethos-text {
+  width: 42%;
+
+  h2 {
+    color: $light-blue;
+    font-size: 15pt;
+    font-weight: 200;
+  }
+
+  p {
+    color: #626365;
+    font-size: 9pt;
+    width: 100%;
   }
 }
 
 .ethos-innovation {
-  margin: -550px 0 0 0;
-  width: 40%;
-
-  h2 {
-    font-size: 15pt;
-    color: $light-blue;
-    font-weight: 200;
-  }
-  p {
-    font-size: 9pt;
-    color: #626365;
-    width: 100%;
-  }
+  margin: -550px 0 0;
 }
 
 .ethos-disruption {
   margin: -25px 0 0 175px;
-  width: 42%;
-
-  h2 {
-    font-size: 15pt;
-    color: $light-blue;
-    font-weight: 200;
-  }
-  p {
-    font-size: 9pt;
-    color: #626365;
-    width: 100%;
-  }
 }
 
 .ethos-startup {
-  margin: -100px 0 0 0;
-  width: 42%;
-
-  h2 {
-    font-size: 15pt;
-    color: $light-blue;
-    font-weight: 200;
-  }
-  p {
-    font-size: 9pt;
-    color: #626365;
-    width: 100%;
-  }
+  margin: -100px 0 0;
 }
 
 .ethos-businness {
   margin: -110px 0 0 175px;
-  width: 42%;
-
-  h2 {
-    font-size: 15pt;
-    color: $light-blue;
-    font-weight: 200;
-  }
-  p {
-    font-size: 9pt;
-    color: #626365;
-    width: 100%;
-  }
 }
