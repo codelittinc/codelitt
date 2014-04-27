@@ -48,13 +48,13 @@ body {
 
 .cubes {
   position: relative;
-  top: -52px;
+  top: -50px;
   height: 100%;
   width: 80%;
-  margin-left: 80px;
+  margin: 0 0 0 45px;
 
   img {
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -62,10 +62,9 @@ body {
   color: #fff;
   text-align: center;
   font-weight: lighter;
-  position: relative;
-  top: -10%;
   width: 90%;
-  margin: 0 auto;
+  margin: -150px auto 100px auto;
+  font-size: 14pt;
   span {
     color: $light-blue;
   }
@@ -88,7 +87,7 @@ body {
   margin: -100px auto;
   width: 158px;
   position: relative;
-  top: -216px;
+  top: -180px;
 
   .we-are,
   .innovation {
@@ -111,4 +110,53 @@ body {
   font-weight: 900;
   font-size: 9pt;
   text-align: center;
+}
+
+.ethos {
+  background: #fff;
+
+  h1 {
+    font-size: 20pt;
+    text-align: center;
+  }
+}
+
+.ethos-image {
+
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 15%;
+  }
+}
+
+.ethos-innovation {
+  position: relative;
+  top: -565px;
+  width: 40%;
+
+  h2 {
+    font-size: 18pt;
+    color: $light-blue;
+    font-weight: 200;
+  }
+  p {
+    color: #626365;
+    width: 100%;
+  }
+}
+
+.ethos-disruption {
+  position: relative;
+  top: -565px;
+
+  h2 {
+    font-size: 18pt;
+    color: $light-blue;
+    font-weight: 200;
+  }
+  p {
+    color: #626365;
+    width: 40%;
+  }
 }
