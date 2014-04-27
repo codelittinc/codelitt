@@ -116,7 +116,7 @@ body {
   background: #fff;
 
   h1 {
-    font-size: 20pt;
+    font-size: 16pt;
     text-align: center;
   }
 }
@@ -126,37 +126,70 @@ body {
   img {
     display: block;
     margin: 0 auto;
-    width: 15%;
+    height: 550px;
   }
 }
 
 .ethos-innovation {
-  position: relative;
-  top: -565px;
+  margin: -550px 0 0 0;
   width: 40%;
 
   h2 {
-    font-size: 18pt;
+    font-size: 15pt;
     color: $light-blue;
     font-weight: 200;
   }
   p {
+    font-size: 9pt;
     color: #626365;
     width: 100%;
   }
 }
 
 .ethos-disruption {
-  position: relative;
-  top: -565px;
+  margin: -25px 0 0 175px;
+  width: 42%;
 
   h2 {
-    font-size: 18pt;
+    font-size: 15pt;
     color: $light-blue;
     font-weight: 200;
   }
   p {
+    font-size: 9pt;
     color: #626365;
-    width: 40%;
+    width: 100%;
+  }
+}
+
+.ethos-startup {
+  margin: -100px 0 0 0;
+  width: 42%;
+
+  h2 {
+    font-size: 15pt;
+    color: $light-blue;
+    font-weight: 200;
+  }
+  p {
+    font-size: 9pt;
+    color: #626365;
+    width: 100%;
+  }
+}
+
+.ethos-businness {
+  margin: -110px 0 0 175px;
+  width: 42%;
+
+  h2 {
+    font-size: 15pt;
+    color: $light-blue;
+    font-weight: 200;
+  }
+  p {
+    font-size: 9pt;
+    color: #626365;
+    width: 100%;
   }
 }
