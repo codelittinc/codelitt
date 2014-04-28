@@ -33,6 +33,10 @@ body {
     font-size: 24pt;
   }
 
+  @include breakpoint($iphone4-landscape) {
+    margin: -39% 0 0 30%;
+  }
+
 }
 
 .cubes-big {
@@ -51,9 +55,14 @@ body {
     width: 100%;
   }
 
+
   @include breakpoint($iphone-landscape) {
     width: 60%;
     margin: -71px 0 50px 115px;
+  }
+
+  @include breakpoint($iphone4-landscape) {
+    margin: -59px 0 50px 115px;
   }
 
   @include breakpoint($ipad-landscape) {
@@ -99,6 +108,12 @@ body {
     }
   }
 
+  @include breakpoint($iphone4-landscape) {
+    img {
+      width: 50%;
+    }
+  }
+
   @include breakpoint($ipad-landscape) {
 
     img {
@@ -117,6 +132,10 @@ body {
     font-weight: lighter;
     margin: 0;
     text-align: center;
+  }
+
+  @include breakpoint($iphone4-landscape) {
+    margin: -293px auto 106px;
   }
 
   @include breakpoint($ipad-landscape) {
@@ -213,6 +232,10 @@ body {
     text-align: left;
     margin: -11px 0 0 314px;
   }
+
+  @include breakpoint($iphone4-landscape) {
+    margin: -59px 0 0 261px;
+  }
 }
 
 .ethos-startup {
@@ -222,6 +245,10 @@ body {
     text-align: right;
     margin: -83px 0 0;
   }
+
+  @include breakpoint($iphone4-landscape) {
+    margin: -127px 0 0;
+  }
 }
 
 .ethos-businness {
@@ -230,6 +257,10 @@ body {
   @include breakpoint($iphone-landscape) {
     text-align: left;
     margin: -103px 0 44px 314px;
+  }
+
+  @include breakpoint($iphone4-landscape) {
+    margin: -103px 0 44px 261px;
   }
 }
 
