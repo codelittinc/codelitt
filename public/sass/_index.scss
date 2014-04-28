@@ -23,19 +23,14 @@ body {
 }
 
 .we-build {
-  position: relative;
   color: #fff;
-  margin: 0;
-  padding: 0;
-  top: -58%;
-  left: 30%;
+  margin: -58% 0 0 30%;
   width: 15%;
-  font-size: 5vw;
+  font-size: 6vw;
   font-weight: lighter;
 
   @include breakpoint($sm) {
-    position: absolute;
-    top: 45%;
+
   }
 
 }
@@ -79,8 +74,7 @@ body {
 }
 
 .cube {
-  position: relative;
-  top: -50px;
+  margin: 50px 0;
   z-index: 1;
 
   img {
@@ -92,10 +86,8 @@ body {
 
 
 .we-are-innovation {
-  margin: -100px auto;
+  margin: -280px auto 93px auto;
   width: 158px;
-  position: relative;
-  top: -180px;
 
   .we-are,
   .innovation {
@@ -111,6 +103,7 @@ body {
 
 .innovation {
   color: #fff;
+  font-size: 22pt;
 }
 
 .learn {
