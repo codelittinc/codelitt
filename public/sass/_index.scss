@@ -25,11 +25,12 @@ body {
   color: #fff;
   margin: -58% 0 0 30%;
   width: 15%;
-  font-size: 6vw;
+  font-size: 17pt;
   font-weight: lighter;
 
   @include breakpoint($iphone-landscape) {
     margin: -33% 0 0 30%;
+    font-size: 24pt;
   }
 
 }
@@ -210,7 +211,7 @@ body {
 
   @include breakpoint($iphone-landscape) {
     text-align: left;
-    margin: -11px 0 0 314px
+    margin: -11px 0 0 314px;
   }
 }
 
@@ -233,8 +234,9 @@ body {
 }
 
 .create-believe-work {
-  width: 100%;
   background: #535353;
+  width: 100%;
+
   img {
     display: block;
     margin: 0 auto;
@@ -251,8 +253,8 @@ body {
 
   h4,
   p {
-    font-weight: 200;
     color: #fff;
+    font-weight: 200;
   }
 
   h4 span {
