@@ -22,6 +22,10 @@ body {
     height: 100%;
     width: 100%;
   }
+
+  @include breakpoint($ipad-landscape) {
+    height: 600px;
+  }
 }
 
 .we-build {
@@ -45,7 +49,10 @@ body {
     font-size: 35pt;
     margin: -42% 0 0 30%;
   }
-
+  @include breakpoint($ipad-landscape) {
+    font-size: 40pt;
+    margin: -38% 0 0 30%;
+  }
 }
 
 .cubes-big {
