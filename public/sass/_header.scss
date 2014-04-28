@@ -6,7 +6,7 @@
   border-radius: 0;
   border-style: solid;
 
-  @include breakpoint($sm) {
+  @include breakpoint($ipad-landscape) {
     min-height: 90px;
   }
 
@@ -16,7 +16,7 @@
   margin: -10px;
   width: 40px;
 
-  @include breakpoint($sm) {
+  @include breakpoint($ipad-landscape) {
     margin: auto;
     width: auto;
   }
