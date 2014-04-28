@@ -101,12 +101,12 @@ body {
   }
 
   @include breakpoint($ipad-portrait) {
-    font-size: 25pt;
+    font-size: 19pt;
     margin: -190px auto 100px;
   }
 
   @include breakpoint($ipad-landscape) {
-    font-size: 19pt;
+    font-size: 25pt;
     margin: -190px auto 100px;
   }
 }
