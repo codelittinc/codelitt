@@ -1,7 +1,25 @@
-// Media query variables
-$sm: 768px;
-$md: 992px;
-$lg: 1200px;
+// Smartphones (landscape) -----------
+$iphone-landscape: (min-width 321px);
+
+// Smartphones (portrait) -----------
+$iphone-portrait: (max-width 320px);
+
+
+// iPads (landscape) -----------
+$ipad-landscape: (min-width 768px)
+                 (max-width 1024px)
+                 (orientation landscape);
+
+// iPads (portrait) -----------
+$ipad-portrait: (min-width 768px)
+                (max-width 1024px)
+                (orientation portrait);
+
+// Desktops and laptops -----------
+$desktops: (min-width 1224px);
+
+// Large screens -----------
+$big-screens: (min-width 1824px);
 
 // Color variables
 $codelitt-dark: #151c2d;
