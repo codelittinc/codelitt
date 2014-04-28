@@ -1,3 +1,7 @@
+// iphone 4
+// Aspect ratio is inverted for some add reason
+$iphone4: ('2/3' 'device-aspect-ratio')(orientation landscape);
+
 // Smartphones (landscape) -----------
 $iphone-landscape: (min-width 321px);
 
