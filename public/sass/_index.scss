@@ -47,14 +47,22 @@ body {
 }
 
 .cubes {
-  position: relative;
-  top: -50px;
   height: 100%;
   width: 80%;
-  margin: 0 0 0 45px;
+  margin: -50px 0 50px 45px;
+
 
   img {
     width: 100%;
+  }
+
+  @include breakpoint($md) {
+    width: 80%;
+    margin: -89px 0 0 150px;
+
+    img {
+      width: 80%;
+    }
   }
 }
 
