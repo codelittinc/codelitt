@@ -348,6 +348,13 @@ body {
     margin: 0 auto;
     width: 100%;
   }
+
+  @include breakpoint($ipad-portrait) {
+    img {
+      margin: 0 auto 30px;
+    }
+  }
+
 }
 
 .we-section {
@@ -365,5 +372,23 @@ body {
 
   h4 span {
     color: $light-blue;
+  }
+
+  @include breakpoint($ipad-portrait) {
+    text-align: left;
+
+    h4 {
+      margin-bottom: 30px;
+    }
+
+    h4,
+    span {
+      font-size: 17pt;
+    }
+
+    p {
+      font-size: 16pt;
+      margin-bottom: 100px;
+    }
   }
 }
