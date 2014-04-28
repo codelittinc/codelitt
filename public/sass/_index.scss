@@ -11,8 +11,8 @@ body {
 
   background: $codelitt-dark;
 
-  @include breakpoint($sm) {
-    height: 680px;
+  @include breakpoint($iphone-landscape) {
+    height: 267px;
   }
 
   img {
@@ -28,8 +28,8 @@ body {
   font-size: 6vw;
   font-weight: lighter;
 
-  @include breakpoint($sm) {
-    margin: -43% 0 0 30%;
+  @include breakpoint($iphone-landscape) {
+    margin: -33% 0 0 30%;
   }
 
 }
@@ -50,7 +50,12 @@ body {
     width: 100%;
   }
 
-  @include breakpoint($md) {
+  @include breakpoint($iphone-landscape) {
+    width: 60%;
+    margin: -71px 0 50px 115px;
+  }
+
+  @include breakpoint($ipad-landscape) {
     width: 80%;
     margin: -139px 0 0 180px;
 
@@ -71,7 +76,7 @@ body {
     color: $light-blue;
   }
 
-  @include breakpoint($md) {
+  @include breakpoint($ipad-landscape) {
     font-size: 25pt;
     margin: -190px auto 100px;
   }
@@ -87,7 +92,13 @@ body {
     display: block;
   }
 
-  @include breakpoint($md) {
+  @include breakpoint($iphone-landscape) {
+    img {
+      width: 40%;
+    }
+  }
+
+  @include breakpoint($ipad-landscape) {
 
     img {
       width: 40%;
@@ -107,7 +118,7 @@ body {
     text-align: center;
   }
 
-  @include breakpoint($md) {
+  @include breakpoint($ipad-landscape) {
     width: 300px;
     margin: -450px auto 170px;
 
@@ -133,7 +144,7 @@ body {
   font-weight: 900;
   text-align: center;
 
-  @include breakpoint($md) {
+  @include breakpoint($ipad-landscape) {
     font-size: 11pt;
   }
 }
@@ -154,6 +165,13 @@ body {
     height: 550px;
     margin: 0 auto;
   }
+
+  @include breakpoint($iphone-landscape) {
+    margin: 0 auto 600px;
+    img {
+      height: 600px;
+    }
+  }
 }
 
 .ethos-text {
@@ -170,22 +188,48 @@ body {
     font-size: 9pt;
     width: 100%;
   }
+
+  @include breakpoint($iphone-landscape) {
+    p {
+      font-size: 13pt;
+    }
+  }
 }
 
 .ethos-innovation {
   margin: -550px 0 0;
+
+  @include breakpoint($iphone-landscape) {
+    text-align: right;
+    margin: -1180px 0 0;
+  }
 }
 
 .ethos-disruption {
   margin: -25px 0 0 175px;
+
+  @include breakpoint($iphone-landscape) {
+    text-align: left;
+    margin: -11px 0 0 314px
+  }
 }
 
 .ethos-startup {
   margin: -100px 0 0;
+
+  @include breakpoint($iphone-landscape) {
+    text-align: right;
+    margin: -83px 0 0;
+  }
 }
 
 .ethos-businness {
   margin: -110px 0 0 175px;
+
+  @include breakpoint($iphone-landscape) {
+    text-align: left;
+    margin: -103px 0 44px 314px;
+  }
 }
 
 .create-believe-work {
