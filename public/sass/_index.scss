@@ -12,8 +12,7 @@ body {
   background: $codelitt-dark;
 
   @include breakpoint($sm) {
-    height: 80%;
-    width: auto;
+    height: 680px;
   }
 
   img {
@@ -30,7 +29,7 @@ body {
   font-weight: lighter;
 
   @include breakpoint($sm) {
-
+    margin: -43% 0 0 30%;
   }
 
 }
@@ -53,7 +52,7 @@ body {
 
   @include breakpoint($md) {
     width: 80%;
-    margin: -89px 0 0 150px;
+    margin: -139px 0 0 180px;
 
     img {
       width: 80%;
@@ -71,6 +70,11 @@ body {
   span {
     color: $light-blue;
   }
+
+  @include breakpoint($md) {
+    font-size: 25pt;
+    margin: -190px auto 100px;
+  }
 }
 
 .cube {
@@ -82,18 +86,35 @@ body {
     margin: 0 auto;
     display: block;
   }
+
+  @include breakpoint($md) {
+
+    img {
+      width: 40%;
+    }
+  }
 }
 
 
 .we-are-innovation {
-  margin: -280px auto 93px auto;
+  margin: -280px auto 93px;
   width: 158px;
 
   .we-are,
   .innovation {
     font-weight: lighter;
-    text-align: center;
     margin: 0;
+    text-align: center;
+  }
+
+  @include breakpoint($md) {
+    width: 300px;
+    margin: -450px auto 170px;
+
+    .we-are,
+    .innovation {
+      font-size: 35pt;
+    }
   }
 }
 
@@ -111,6 +132,10 @@ body {
   font-size: 9pt;
   font-weight: 900;
   text-align: center;
+
+  @include breakpoint($md) {
+    font-size: 11pt;
+  }
 }
 
 .ethos {
