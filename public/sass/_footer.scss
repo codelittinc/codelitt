@@ -1,0 +1,30 @@
+.footer {
+  background: $codelitt-dark;
+
+  p {
+    color: #626365;
+  }
+}
+
+.footer-info {
+  display: none;
+}
+
+.footer-logo {
+  img {
+    display: block;
+    margin: 20px auto;
+  }
+}
+
+.footer-back {
+  display: none;
+
+  img {
+
+  }
+
+  span {
+    color: $light-blue;
+  }
+}
