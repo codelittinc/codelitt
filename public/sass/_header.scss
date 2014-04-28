@@ -20,6 +20,11 @@
     margin: auto;
     width: auto;
   }
+
+  @include breakpoint($ipad-portrait) {
+    margin: auto;
+    width: 80%;
+  }
 }
 
 #nav-right {
@@ -29,5 +34,11 @@
 
   a {
     color: #14a6fa;
+  }
+
+  @include breakpoint($ipad-portrait) {
+    ul {
+      margin: -1% -2% 1% 0;
+    }
   }
 }
