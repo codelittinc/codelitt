@@ -58,7 +58,7 @@ body {
   }
 }
 
-.we-work {
+.we-work-cubes {
   color: #fff;
   text-align: center;
   font-weight: lighter;
@@ -160,4 +160,32 @@ body {
 
 .ethos-businness {
   margin: -110px 0 0 175px;
+}
+
+.create-believe-work {
+  width: 100%;
+  background: #535353;
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+.we-section {
+  color: #fff;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 14pt;
+
+
+  h4,
+  p {
+    font-weight: 200;
+    color: #fff;
+  }
+
+  h4 span {
+    color: $light-blue;
+  }
 }
