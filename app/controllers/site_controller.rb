@@ -4,4 +4,8 @@ class SiteController < ApplicationController
 
   end
 
+  def services
+
+  end
+
 end
