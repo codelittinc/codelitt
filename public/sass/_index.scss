@@ -496,6 +496,13 @@ body {
       margin: 0 auto 60px;
     }
   }
+
+  @include breakpoint($desktops) {
+    img {
+      margin: 0 auto 60px;
+      width: 80%;
+    }
+  }
 }
 
 .we-section {
@@ -549,5 +556,31 @@ body {
       font-size: 18pt;
       margin-bottom: 100px;
     }
+  }
+
+  @include breakpoint($desktops) {
+    text-align: left;
+    max-width: 320px;
+    margin: 0 8% 0 0%;
+
+    h4 {
+      margin-bottom: 70px;
+    }
+
+    h4,
+    span {
+      font-size: 22pt;
+    }
+
+    p {
+      font-size: 20pt;
+      margin-bottom: 100px;
+    }
+  }
+}
+
+.we-work {
+  @include breakpoint($desktops) {
+    margin-right: 0;
   }
 }
