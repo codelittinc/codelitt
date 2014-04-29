@@ -136,11 +136,16 @@ body {
     font-size: 25pt;
     margin: -190px auto 100px;
   }
+
+  @include breakpoint($desktops) {
+    font-size: 35pt;
+    margin: -234px auto 100px;
+  }
 }
 
 .cube {
   margin: 50px 0;
-  z-index: 1;
+  z-index: 999;
 
   img {
     width: 70%;
@@ -164,6 +169,13 @@ body {
 
     img {
       width: 40%;
+    }
+  }
+
+  @include breakpoint($desktops) {
+
+    img {
+      width: 423px;
     }
   }
 }
@@ -203,6 +215,16 @@ body {
       font-size: 35pt;
     }
   }
+
+  @include breakpoint($desktops) {
+    width: 300px;
+    margin: -502px auto 182px;
+
+    .we-are,
+    .innovation {
+      font-size: 41pt;
+    }
+  }
 }
 
 .we-are {
@@ -227,6 +249,10 @@ body {
 
   @include breakpoint($ipad-landscape) {
     font-size: 11pt;
+  }
+
+  @include breakpoint($desktops) {
+    font-size: 14pt;
   }
 }
 
