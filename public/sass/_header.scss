@@ -25,6 +25,11 @@
     margin: auto;
     width: 80%;
   }
+
+  @include breakpoint($desktops) {
+    margin: auto;
+    width: 100%;
+  }
 }
 
 #nav-right {
@@ -39,6 +44,12 @@
   @include breakpoint($ipad-portrait) {
     ul {
       margin: -1% -2% 1% 0;
+    }
+  }
+
+  @include breakpoint($desktops) {
+    ul {
+      margin: 0 0 1%;
     }
   }
 }
