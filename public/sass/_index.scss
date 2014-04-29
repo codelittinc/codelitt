@@ -280,6 +280,14 @@ body {
       margin: 80px auto;
     }
   }
+
+  @include breakpoint($desktops) {
+    h1 {
+      font-size: 35pt;
+      font-weight: 300;
+      margin: 80px auto;
+    }
+  }
 }
 
 .ethos-image {
@@ -307,6 +315,12 @@ body {
   @include breakpoint($ipad-landscape) {
     img {
       height: 820px;
+    }
+  }
+
+  @include breakpoint($desktops) {
+    img {
+      height: 900px;
     }
   }
 }
@@ -350,6 +364,14 @@ body {
     }
   }
 
+  @include breakpoint($desktops) {
+    h2 {
+      font-size: 29pt;
+    }
+    p {
+      font-size: 20pt;
+    }
+  }
 }
 
 .ethos-innovation {
@@ -366,6 +388,10 @@ body {
 
   @include breakpoint($ipad-landscape) {
     margin: -1391px 0 0;
+  }
+
+  @include breakpoint($desktops) {
+    margin: -1469px 0 0;
   }
 }
 
@@ -388,6 +414,10 @@ body {
   @include breakpoint($ipad-landscape) {
     margin: 22px 0 0 541px;
   }
+
+  @include breakpoint($desktops) {
+    margin: 30px 0 0 656px;
+  }
 }
 
 .ethos-startup {
@@ -409,6 +439,15 @@ body {
   @include breakpoint($ipad-landscape) {
     margin: -60px 0 0;
   }
+
+  @include breakpoint($desktops) {
+    margin: -60px 0 0;
+
+    h2 {
+      float: right;
+      width: 80%;
+    }
+  }
 }
 
 .ethos-businness {
@@ -429,6 +468,10 @@ body {
 
   @include breakpoint($ipad-landscape) {
     margin: -57px 0 78px 541px;
+  }
+
+  @include breakpoint($desktops) {
+    margin: -57px 0 78px 656px;
   }
 }
 
