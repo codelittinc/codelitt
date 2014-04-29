@@ -49,6 +49,7 @@ body {
     font-size: 35pt;
     margin: -42% 0 0 30%;
   }
+
   @include breakpoint($ipad-landscape) {
     font-size: 40pt;
     margin: -38% 0 0 30%;
@@ -226,6 +227,14 @@ body {
       margin: 80px auto;
     }
   }
+
+  @include breakpoint($ipad-landscape) {
+    h1 {
+      font-size: 30pt;
+      font-weight: 300;
+      margin: 80px auto;
+    }
+  }
 }
 
 .ethos-image {
@@ -245,6 +254,12 @@ body {
 
   @include breakpoint($ipad-portrait) {
     margin: 0 auto 400px;
+    img {
+      height: 820px;
+    }
+  }
+
+  @include breakpoint($ipad-landscape) {
     img {
       height: 820px;
     }
@@ -280,6 +295,16 @@ body {
       font-size: 16pt;
     }
   }
+
+  @include breakpoint($ipad-landscape) {
+    h2 {
+      font-size: 29pt;
+    }
+    p {
+      font-size: 18pt;
+    }
+  }
+
 }
 
 .ethos-innovation {
@@ -292,6 +317,10 @@ body {
 
   @include breakpoint($ipad-portrait) {
     margin: -1190px 0 0;
+  }
+
+  @include breakpoint($ipad-landscape) {
+    margin: -1391px 0 0;
   }
 }
 
@@ -310,6 +339,10 @@ body {
   @include breakpoint($ipad-portrait) {
     margin: 0 0 0 421px;
   }
+
+  @include breakpoint($ipad-landscape) {
+    margin: 22px 0 0 541px;
+  }
 }
 
 .ethos-startup {
@@ -327,6 +360,10 @@ body {
   @include breakpoint($ipad-portrait) {
     margin: -54px 0 0;
   }
+
+  @include breakpoint($ipad-landscape) {
+    margin: -60px 0 0;
+  }
 }
 
 .ethos-businness {
@@ -343,6 +380,10 @@ body {
 
   @include breakpoint($ipad-portrait) {
     margin: -66px 0 0 421px;
+  }
+
+  @include breakpoint($ipad-landscape) {
+    margin: -57px 0 78px 541px;
   }
 }
 
