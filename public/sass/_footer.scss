@@ -8,12 +8,25 @@
   @include breakpoint($ipad-portrait) {
     width: auto;
   }
+
+  @include breakpoint($ipad-landscape) {
+    width: auto;
+  }
 }
 
 .footer-info {
   display: none;
 
   @include breakpoint($ipad-portrait) {
+    display: block;
+
+    p {
+      margin: 60px 15px 0;
+      float: left;
+    }
+  }
+
+  @include breakpoint($ipad-landscape) {
     display: block;
 
     p {
@@ -32,6 +45,10 @@
   @include breakpoint($ipad-portrait) {
     margin: -55px auto;
   }
+
+  @include breakpoint($ipad-landscape) {
+    margin: -55px auto;
+  }
 }
 
 .footer-back {
@@ -44,5 +61,14 @@
   @include breakpoint($ipad-portrait) {
     display: block;
     margin: 50px 0 55px 550px;
+  }
+
+  @include breakpoint($ipad-landscape) {
+    display: block;
+    margin: 50px 0 55px 830px;
+  }
+
+  span {
+    font-size: 14pt;
   }
 }
