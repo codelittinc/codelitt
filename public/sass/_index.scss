@@ -26,6 +26,10 @@ body {
   @include breakpoint($ipad-landscape) {
     height: 600px;
   }
+
+  @include breakpoint($desktops) {
+    height: 600px;
+  }
 }
 
 .we-build {
@@ -53,6 +57,12 @@ body {
   @include breakpoint($ipad-landscape) {
     font-size: 40pt;
     margin: -38% 0 0 30%;
+  }
+
+  @include breakpoint($desktops) {
+    width: 5%;
+    font-size: 50pt;
+    margin: -408px 0 0 33%;
   }
 }
 
@@ -92,6 +102,15 @@ body {
 
     img {
       width: 80%;
+    }
+  }
+
+  @include breakpoint($desktops) {
+    width: 750px;
+    margin: -164px 0 0 28%;
+
+    img {
+      width: 100%;
     }
   }
 }
