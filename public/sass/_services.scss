@@ -256,9 +256,7 @@
 .collab-creation-img {
   img {
     background: $light-blue;
-    display: block;
     width: 100%;
-    margin: 0;
   }
 }
 
@@ -269,4 +267,14 @@
     margin: -2px auto;
     width: 1%;
   }
+}
+
+.through-every-img {
+  img {
+    padding: 20px 0;
+  }
+}
+
+.through-every-handle {
+  background: $light-grey;
 }
