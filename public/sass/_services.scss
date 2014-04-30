@@ -32,7 +32,27 @@
   }
 
   @include breakpoint($iphone-landscape) {
-    height: 267px;
+    height: 369px;
+    margin: -45px 0 -25px;
+
+    h1 {
+      font-size: 14pt;
+      margin: -308px auto 0;
+    }
+
+    p {
+      font-size: 10pt;
+    }
+
+    .always-core-list {
+      margin: 183px auto 0;
+      width: 87%;
+    }
+
+    span {
+      border: 3px solid $light-blue;
+      margin: 2px auto;
+    }
   }
 
   @include breakpoint($ipad-portrait) {
