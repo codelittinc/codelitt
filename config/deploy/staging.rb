@@ -3,15 +3,18 @@ set :rack_env, 'staging'
 set :rails_env, 'staging'
 
 ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
+
+set :deploy_to, '/var/www/staging_codelitt'
+
 # Simple Role Syntax
 # ==================
 # Supports bulk-adding hosts to roles, the primary server in each group
 # is considered to be the first unless any hosts have the primary
 # property set.  Don't declare `role :all`, it's a meta role.
 
-role :app, %w{deploy@< ip-address >}
-role :web, %w{deploy@< ip-address >}
-role :db,  %w{deploy@< ip-address >}
+role :app, %w{deploy@staging.codelitt.com}
+role :web, %w{deploy@staging.codelitt.com}
+role :db,  %w{deploy@staging.codelitt.com}
 
 
 # Extended Server Syntax
@@ -20,7 +23,7 @@ role :db,  %w{deploy@< ip-address >}
 # server list. The second argument is a, or duck-types, Hash and is
 # used to set extended properties on the server.
 
-server '< ip-address >', user: 'deploy', roles: %w{web app}
+server 'staging.codelitt.com', user: 'deploy', roles: %w{web app}
 
 
 # Custom SSH Options
