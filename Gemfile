@@ -49,6 +49,8 @@ gem 'haml'
 
 # Use Capistrano for deployment
 gem 'capistrano', group: :development
+gem 'capistrano-rvm'
+gem 'capistrano-rails', '~> 1.1'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
