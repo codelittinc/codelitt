@@ -102,7 +102,29 @@
   }
 
   @include breakpoint($ipad-landscape) {
-    height: 600px;
+    height: 678px;
+    margin: -20px 0 0;
+
+    h1 {
+      font-size: 31pt;
+      margin: -574px auto 0;
+    }
+
+    p {
+      font-size: 19pt;
+      font-weight: 300;
+    }
+
+    span {
+      border: 3px solid #15acff;
+      margin: 6px 10px;
+    }
+
+    .always-core-list {
+      margin: 324px auto 0;
+      width: 96%;
+    }
+
   }
 
   @include breakpoint($desktops) {
