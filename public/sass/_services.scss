@@ -32,6 +32,11 @@
     border-radius: 100px;
   }
 
+  img {
+    height: 100%;
+    width: 100%;
+  }
+
   @include breakpoint($iphone-landscape) {
     height: 369px;
     margin: -45px 0 -25px;
@@ -72,11 +77,28 @@
   }
 
   @include breakpoint($ipad-portrait) {
-    height: 500px;
-  }
-  img {
-    height: 100%;
-    width: 100%;
+    height: 570px;
+    margin: -20px 0 0;
+
+    h1 {
+      font-size: 23pt;
+      margin: -464px auto 0;
+    }
+
+    p {
+      font-size: 14pt;
+    }
+
+    span {
+      border: 4px solid $light-blue;
+      margin: 3px auto;
+    }
+
+    .always-core-list {
+      margin: 244px auto 0;
+      width: 95%;
+    }
+
   }
 
   @include breakpoint($ipad-landscape) {
