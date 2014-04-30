@@ -4,17 +4,6 @@ Codelitt::Application.configure do
   # Code is not reloaded between requests.
   config.cache_classes = true
 
-  Rails.application.routes.default_url_options[:host] = '???'
-
-
-  config.action_mailer.default_url_options = { :host => 'Codelitt.co' }
-  # ActionMailer Config
-  # Setup for production - deliveries, no errors raised
-  # config.action_mailer.delivery_method = :smtp
-  # config.action_mailer.perform_deliveries = true
-  # config.action_mailer.raise_delivery_errors = false
-  # config.action_mailer.default :charset => "utf-8"
-  # config.action_mailer.asset_host = 'http://www.Codelitt.co'
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both thread web servers
   # and those relying on copy on write to perform better.
@@ -31,7 +20,7 @@ Codelitt::Application.configure do
   # config.action_dispatch.rack_cache = true
 
   # Disable Rails's static asset server (Apache or nginx will already do this).
-  config.serve_static_assets = true
+  config.serve_static_assets = false
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
