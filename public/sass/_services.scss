@@ -169,6 +169,7 @@
 }
 
 .right-from-img {
+  background: $light-grey;
   img {
     display: block;
     width: 100%;
@@ -179,6 +180,7 @@
 
   h3 {
     color: $light-blue;
+    font-weight: 400;
   }
 
   h4 {
@@ -244,5 +246,27 @@
       font-size: 20pt;
       margin-bottom: 100px;
     }
+  }
+}
+
+.collab-creation {
+  background: #fff;
+}
+
+.collab-creation-img {
+  img {
+    background: $light-blue;
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.collab-creating-handle {
+  img {
+    display: block;
+    padding: 0;
+    margin: -2px auto;
+    width: 1%;
   }
 }
