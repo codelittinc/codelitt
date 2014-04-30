@@ -4,9 +4,6 @@ lock '3.2.1'
 set :application, 'codelitt'
 set :repo_url, 'git@github.com:codelittinc/codelitt.git'
 
-# Default deploy_to directory is /var/www/my_app
-set :deploy_to, '/var/www/codelitt'
-
 # Default value for :scm is :git
 set :scm, :git
 
@@ -53,9 +50,11 @@ namespace :compass do
   desc 'Compile Sass to CSS'
   task :compile do
     on roles(:web) do
-      # Get rvm from user local but there may be a way to get this path
-      execute "cd #{fetch(:deploy_to)}/current/ && RAILS_ENV=#{fetch(:env)}
-               /usr/local/rvm/bin/rvm default do compass compile"
+      within "#{fetch(:deploy_to)}/current/" do
+        with rails_env: fetch(:env) do
+          execute :bundle, :exec, 'compass compile'
+        end
+      end
     end
   end
 end
