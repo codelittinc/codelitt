@@ -81,6 +81,15 @@
     color: #626365;
   }
 
+    @include breakpoint($iphone-landscape) {
+      h1 {
+        font-size: 16pt;
+        font-weight: 300;
+        margin: 30px auto;
+      }
+    }
+
+
   @include breakpoint($ipad-portrait) {
     h1 {
       font-size: 30pt;
@@ -115,9 +124,9 @@
   }
 
   @include breakpoint($iphone-landscape) {
-    margin: 0 auto 600px;
     img {
-      height: 600px;
+      height: auto;
+      width: 100%;
     }
   }
 
@@ -151,6 +160,29 @@
     display: inline-block;
     font-size: 5pt;
     width: 23%%;
+  }
+
+  @include breakpoint($iphone-landscape) {
+    p {
+      font-size: 10pt;
+      text-align: center;
+    }
+
+    .strategy {
+      margin: 0 0 0 -50px;
+    }
+
+    .marketing {
+      margin: 0 0 0 38px;
+    }
+
+    .technology {
+      margin: 0 0 0 45px;
+    }
+
+    .design {
+      margin: 0 -50px 0 37px;
+    }
   }
 }
 
