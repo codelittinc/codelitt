@@ -200,6 +200,29 @@
       margin: 0 -50px 0 37px;
     }
   }
+
+  @include breakpoint($iphone4-landscape) {
+    p {
+      font-size: 10pt;
+      text-align: center;
+    }
+
+    .strategy {
+      margin: 0 0 0 -46px;
+    }
+
+    .marketing {
+      margin: 0 0 0 29px;
+    }
+
+    .technology {
+      margin: 0 0 0 35px;
+    }
+
+    .design {
+      margin: 0 -50px 0 35px;
+    }
+  }
 }
 
 .right-from {
