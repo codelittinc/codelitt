@@ -316,8 +316,15 @@
   img {
     display: block;
     margin: 0 auto;
-    width: 4px;
+    width: 2px;
   }
+
+  @include breakpoint($iphone-landscape) {
+    img {
+      width: 4px;
+    }
+  }
+
 }
 
 .through-every-img {
