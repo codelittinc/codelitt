@@ -169,9 +169,10 @@
   }
 
   @include breakpoint($ipad-portrait) {
-    margin: 0 auto 400px;
+
     img {
-      height: 820px;
+      height: auto;
+      width: 100%;
     }
   }
 
@@ -243,6 +244,30 @@
 
     .design {
       margin: 0 -50px 0 35px;
+    }
+  }
+
+  @include breakpoint($ipad-portrait) {
+    margin-bottom: 100px;
+
+    p {
+      font-size: 14pt;
+    }
+
+    .strategy {
+      margin: 0 0 0 -58px;
+    }
+
+    .marketing {
+      margin: 0 0 0 60px
+    }
+
+    .technology {
+      margin: 0 0 0 60px;
+    }
+
+    .design {
+      margin: 0 -80px 0 50px;
     }
   }
 }
