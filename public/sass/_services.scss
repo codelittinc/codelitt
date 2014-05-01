@@ -486,9 +486,17 @@
 }
 
 .collab-creation-img {
+  background: $light-blue;
   img {
-    background: $light-blue;
     width: 100%;
+  }
+
+  @include breakpoint($desktops) {
+    img {
+      width: 800px;
+      margin: 0 auto;
+      display: block;
+    }
   }
 }
 
@@ -529,6 +537,13 @@
   img {
     padding: 20px 0;
   }
+
+  @include breakpoint($iphone-landscape) {
+    img {
+      padding: 30px 0;
+    }
+  }
+
   @include breakpoint($ipad-portrait) {
     img {
       padding: 50px 0;
@@ -538,6 +553,12 @@
   @include breakpoint($ipad-landscape) {
     img {
       padding: 60px 0;
+    }
+  }
+
+  @include breakpoint($desktops) {
+    img {
+      padding: 50px 0;
     }
   }
 }
