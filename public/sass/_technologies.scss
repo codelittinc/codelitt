@@ -2,6 +2,7 @@
   background: $codelitt-light;
   margin: -20px 0 0;
   padding-bottom: 117px;
+  width: 100%;
 
   h1,
   h2 {
@@ -87,7 +88,7 @@
     }
   }
 
-  @include breakpoint($iphone-landscape) {
+  @include breakpoint($iphone4-landscape) {
     h1 {
       margin-top: -70px;
     }
