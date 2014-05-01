@@ -60,6 +60,24 @@
       font-size: 26pt;
     }
   }
+  @include breakpoint($desktops) {
+    margin-top: 5%;
+
+    h1,
+    h2 {
+      font-size: 35pt;
+    }
+
+    h4 {
+      font-size: 31pt;
+    }
+
+    img {
+      width: 80%;
+      display: block;
+      margin: 0 auto;
+    }
+  }
 }
 
 // Make the footer stick to the bottom only on
@@ -80,4 +98,5 @@
 .contact-container + div {
   @include fixed-footer($iphone-portrait);
   @include fixed-footer($ipad-portrait);
+  @include fixed-footer($desktops);
 }
