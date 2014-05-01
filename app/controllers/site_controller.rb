@@ -11,4 +11,9 @@ class SiteController < ApplicationController
   def technologies
 
   end
+
+  def contact
+
+  end
+
 end

@@ -6,6 +6,7 @@ Codelitt::Application.routes.draw do
  root 'site#index'
  get 'services' => 'site#services'
  get 'technologies' => 'site#technologies'
+ get 'contact' => 'site#contact'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
