@@ -488,6 +488,12 @@
       padding: 50px 0;
     }
   }
+
+  @include breakpoint($ipad-landscape) {
+    img {
+      padding: 60px 0;
+    }
+  }
 }
 
 .through-every-handle {
@@ -496,6 +502,14 @@
 
 .we-help {
   @include breakpoint($ipad-portrait) {
+    margin-top: 50px;
+  }
+
+  @include breakpoint($ipad-landscape) {
+    margin-top: 50px;
+  }
+
+  @include breakpoint($desktops) {
     margin-top: 50px;
   }
 }
