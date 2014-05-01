@@ -30,6 +30,19 @@
   img {
     width: 100%;
   }
+
+  @include breakpoint($ipad-portrait) {
+    margin-top: 100px;
+
+    h1,
+    h2 {
+      font-size: 26pt;
+    }
+
+    h4 {
+      font-size: 22pt;
+    }
+  }
 }
 
 // Make the footer stick to the bottom only on
