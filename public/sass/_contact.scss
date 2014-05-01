@@ -48,8 +48,8 @@
 // Make the footer stick to the bottom only on
 // the contact page
 // Not sure if witty or sloppy
-.contact-container + div {
-  @include breakpoint($iphone-portrait) {
+@mixin fixed-footer($media) {
+  @include breakpoint($media) {
     bottom: 0;
     margin-bottom: 0;
     border-width: 1px 0 0;
@@ -58,4 +58,9 @@
     left: 0;
     z-index: 1030;
   }
+}
+
+.contact-container + div {
+  @include fixed-footer($iphone-portrait);
+  @include fixed-footer($ipad-portrait);
 }
