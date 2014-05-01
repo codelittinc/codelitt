@@ -80,6 +80,25 @@
       font-size: 24pt;
     }
   }
+
+  @include breakpoint($desktops) {
+    padding-bottom: 351px;
+
+    h1 {
+      font-size: 30pt;
+      margin-top: -435px;
+    }
+
+    h2 {
+      font-size: 24pt;
+    }
+
+    img {
+      width: 750px;
+      display: block;
+      margin: 60px auto 0;
+    }
+  }
 }
 
 .we-got-you {
@@ -136,4 +155,29 @@
       margin: -140px 0 100px;
     }
   }
+
+  @include breakpoint($desktops) {
+    margin-top: 60px;
+    padding-bottom: 80px;
+
+    h1 {
+      font-size: 35pt;
+      margin: -170px 0 150px;
+    }
+
+    h3 {
+      font-size: 22pt;
+    }
+
+    h4 {
+      font-size: 17pt;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 16pt;
+    }
+
+  }
+
 }
