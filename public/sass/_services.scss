@@ -375,19 +375,20 @@
   }
 
   p {
-    color: #9e9e9e;
+    color: #585858;
   }
 
   @include breakpoint($ipad-portrait) {
     text-align: left;
 
-    h4 {
-      margin-bottom: 30px;
+    h3 {
+      font-size: 20pt;
     }
 
-    h4,
-    span {
-      font-size: 17pt;
+    h4 {
+      font-size: 16pt;
+      margin-bottom: 30px;
+      font-weight: 300;
     }
 
     p {
@@ -399,37 +400,36 @@
   @include breakpoint($ipad-landscape) {
     text-align: left;
 
-    h4 {
-      margin-bottom: 70px;
-    }
-
-    h4,
-    span {
+    h3 {
       font-size: 20pt;
     }
 
+    h4 {
+      font-size: 16pt;
+      margin-bottom: 30px;
+      font-weight: 300;
+    }
+
     p {
-      font-size: 18pt;
+      font-size: 16pt;
       margin-bottom: 100px;
     }
   }
 
   @include breakpoint($desktops) {
-    text-align: left;
-    max-width: 320px;
-    margin: 0 8% 0 0%;
 
-    h4 {
-      margin-bottom: 70px;
+    h3 {
+      font-size: 20pt;
     }
 
-    h4,
-    span {
-      font-size: 22pt;
+    h4 {
+      font-size: 16pt;
+      margin-bottom: 30px;
+      font-weight: 300;
     }
 
     p {
-      font-size: 20pt;
+      font-size: 16pt;
       margin-bottom: 100px;
     }
   }
@@ -459,14 +459,43 @@
     }
   }
 
+  @include breakpoint($ipad-portrait) {
+    img {
+      width: 6px;
+    }
+  }
+
+  @include breakpoint($ipad-landscape) {
+    img {
+      width: 8px;
+    }
+  }
+
+  @include breakpoint($desktops) {
+    img {
+      width: 10px;
+    }
+  }
+
 }
 
 .through-every-img {
   img {
     padding: 20px 0;
   }
+  @include breakpoint($ipad-portrait) {
+    img {
+      padding: 50px 0;
+    }
+  }
 }
 
 .through-every-handle {
   background: $light-grey;
+}
+
+.we-help {
+  @include breakpoint($ipad-portrait) {
+    margin-top: 50px;
+  }
 }
