@@ -8,4 +8,7 @@ class SiteController < ApplicationController
 
   end
 
+  def technologies
+
+  end
 end
