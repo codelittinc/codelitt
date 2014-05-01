@@ -200,13 +200,15 @@
 
   @include breakpoint($ipad-landscape) {
     img {
-      height: 820px;
+      height: auto;
+      width: 85%;
     }
   }
 
   @include breakpoint($desktops) {
     img {
-      height: 900px;
+      height: auto;
+      width: 85%;
     }
   }
 }
@@ -281,7 +283,7 @@
     }
 
     .marketing {
-      margin: 0 0 0 60px
+      margin: 0 0 0 60px;
     }
 
     .technology {
@@ -290,6 +292,30 @@
 
     .design {
       margin: 0 -80px 0 50px;
+    }
+  }
+
+  @include breakpoint($ipad-landscape) {
+    margin-bottom: 100px;
+
+    p {
+      font-size: 14pt;
+    }
+
+    .strategy {
+      margin: 0;
+    }
+
+    .marketing {
+      margin: 0 0 0 35px;
+    }
+
+    .technology {
+      margin: 0 0 0 34px;
+    }
+
+    .design {
+      margin: 0 -80px 0 32px;
     }
   }
 }
