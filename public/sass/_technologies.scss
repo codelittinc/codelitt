@@ -24,4 +24,54 @@
   img {
     width: 100%;
   }
+
+  @include breakpoint($iphone-landscape) {
+    padding-bottom: 263px;
+
+    h1 {
+      font-size: 20pt;
+      margin-top: -315px;
+    }
+
+    h2 {
+      font-size: 13pt;
+    }
+
+    img {
+      margin-top: 40px;
+    }
+  }
+}
+
+.we-got-you {
+  background: #fff;
+  margin-top: 10px;
+
+  img {
+    width: 100%;
+  }
+
+  h1 {
+    color: #585858;
+    font-weight: 200;
+    font-size: 18pt;
+    text-align: center;
+    margin: -50px 0 17px;
+  }
+
+  h3 {
+    color: $light-blue;
+  }
+
+  p {
+    color: #585858;
+  }
+
+  @include breakpoint($iphone-landscape) {
+    margin-top: 30px;
+
+    h1 {
+      margin: -85px 0 60px;
+    }
+  }
 }
