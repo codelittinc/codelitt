@@ -43,6 +43,23 @@
       font-size: 22pt;
     }
   }
+
+  @include breakpoint($ipad-landscape) {
+    margin-top: 25px;
+
+    h1,
+    h2 {
+      font-size: 30pt;
+    }
+
+    h2 {
+      margin-bottom: -70px;
+    }
+
+    h4 {
+      font-size: 26pt;
+    }
+  }
 }
 
 // Make the footer stick to the bottom only on
