@@ -1,0 +1,582 @@
+.always-core {
+  margin: -65px 0 -40px;
+  padding: 0;
+  width: 100%;
+  height: 300px;
+
+  background: $codelitt-light;
+
+  h1 {
+    color: #9e9e9e;
+    font-size: 9pt;
+    font-weight: 400;
+    margin: -222px auto 0;
+    text-align: center;
+    width: 45%;
+  }
+
+  .always-core-list {
+    margin: 94px auto 0;
+    width: 92%;
+  }
+
+  p {
+    color: #fff;
+    display: inline-block;
+    font-size: 5pt;
+  }
+
+  span {
+    display: inline-block;
+    border: 2px solid $light-blue;
+    border-radius: 100px;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+
+  @include breakpoint($iphone-landscape) {
+    height: 369px;
+    margin: -45px 0 -25px;
+
+    h1 {
+      font-size: 14pt;
+      margin: -308px auto 0;
+    }
+
+    p {
+      font-size: 9pt;
+    }
+
+    .always-core-list {
+      margin: 183px auto 0;
+      width: 84%;
+    }
+
+    span {
+      border: 3px solid $light-blue;
+      margin: 2px auto;
+    }
+  }
+
+  @include breakpoint($iphone4-landscape) {
+    h1 {
+      font-size: 14pt;
+      margin: -295px auto 0;
+    }
+
+    p {
+      font-size: 8pt;
+    }
+    .always-core-list {
+      margin: 152px auto 0;
+      width: 92%;
+    }
+  }
+
+  @include breakpoint($ipad-portrait) {
+    height: 570px;
+    margin: -20px 0 0;
+
+    h1 {
+      font-size: 23pt;
+      margin: -464px auto 0;
+    }
+
+    p {
+      font-size: 14pt;
+    }
+
+    span {
+      border: 4px solid $light-blue;
+      margin: 3px auto;
+    }
+
+    .always-core-list {
+      margin: 244px auto 0;
+      width: 95%;
+    }
+
+  }
+
+  @include breakpoint($ipad-landscape) {
+    height: 678px;
+    margin: -20px 0 0;
+
+    h1 {
+      font-size: 31pt;
+      margin: -574px auto 0;
+    }
+
+    p {
+      font-size: 19pt;
+      font-weight: 300;
+    }
+
+    span {
+      border: 3px solid #15acff;
+      margin: 6px 10px;
+    }
+
+    .always-core-list {
+      margin: 324px auto 0;
+      width: 96%;
+    }
+
+  }
+
+  @include breakpoint($desktops) {
+    height: 600px;
+    margin: -20px 0 0;
+
+    h1 {
+      font-size: 31pt;
+      margin: -543px auto 0;
+    }
+
+    p {
+      font-size: 19pt;
+      font-weight: 300;
+    }
+
+    span {
+      border: 3px solid #15acff;
+      margin: 6px 10px;
+    }
+
+    .always-core-list {
+      margin: 338px auto 0;
+      width: 981px;
+    }
+
+  }
+}
+
+.identifying-container {
+  background: #fff;
+
+  h1 {
+    font-size: 12pt;
+    text-align: center;
+    color: #626365;
+  }
+
+  @include breakpoint($iphone-landscape) {
+    h1 {
+      font-size: 16pt;
+      font-weight: 300;
+      margin: 30px auto;
+    }
+  }
+
+
+  @include breakpoint($ipad-portrait) {
+    h1 {
+      font-size: 30pt;
+      font-weight: 300;
+      margin: 80px auto;
+    }
+  }
+
+  @include breakpoint($ipad-landscape) {
+    h1 {
+      font-size: 30pt;
+      font-weight: 300;
+      margin: 80px auto;
+    }
+  }
+
+  @include breakpoint($desktops) {
+    h1 {
+      font-size: 35pt;
+      font-weight: 300;
+      margin: 80px auto;
+    }
+  }
+}
+
+.identifying-container-img{
+
+  img {
+    display: block;
+    height: 30px;
+    margin: 15px auto;
+  }
+
+  @include breakpoint($iphone-landscape) {
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  @include breakpoint($ipad-portrait) {
+
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  @include breakpoint($ipad-landscape) {
+    img {
+      height: auto;
+      width: 85%;
+    }
+  }
+
+  @include breakpoint($desktops) {
+    img {
+      height: auto;
+      width: 85%;
+    }
+  }
+}
+
+.identifying-container-list {
+  margin: 0 auto 20px 35px;
+  width: 88%;
+  display: block;
+
+  p {
+    color: $light-blue;
+    display: inline-block;
+    font-size: 5pt;
+    width: 23%%;
+  }
+
+  @include breakpoint($iphone-landscape) {
+    p {
+      font-size: 10pt;
+      text-align: center;
+    }
+
+    .strategy {
+      margin: 0 0 0 -50px;
+    }
+
+    .marketing {
+      margin: 0 0 0 38px;
+    }
+
+    .technology {
+      margin: 0 0 0 45px;
+    }
+
+    .design {
+      margin: 0 -50px 0 37px;
+    }
+  }
+
+  @include breakpoint($iphone4-landscape) {
+    p {
+      font-size: 10pt;
+      text-align: center;
+    }
+
+    .strategy {
+      margin: 0 0 0 -46px;
+    }
+
+    .marketing {
+      margin: 0 0 0 29px;
+    }
+
+    .technology {
+      margin: 0 0 0 35px;
+    }
+
+    .design {
+      margin: 0 -50px 0 35px;
+    }
+  }
+
+  @include breakpoint($ipad-portrait) {
+    margin-bottom: 100px;
+
+    p {
+      font-size: 14pt;
+    }
+
+    .strategy {
+      margin: 0 0 0 -58px;
+    }
+
+    .marketing {
+      margin: 0 0 0 60px;
+    }
+
+    .technology {
+      margin: 0 0 0 60px;
+    }
+
+    .design {
+      margin: 0 -80px 0 50px;
+    }
+  }
+
+  @include breakpoint($ipad-landscape) {
+    margin-bottom: 100px;
+
+    p {
+      font-size: 14pt;
+    }
+
+    .strategy {
+      margin: 0;
+    }
+
+    .marketing {
+      margin: 0 0 0 35px;
+    }
+
+    .technology {
+      margin: 0 0 0 34px;
+    }
+
+    .design {
+      margin: 0 -80px 0 32px;
+    }
+  }
+
+  @include breakpoint($desktops) {
+    margin-bottom: 100px;
+    width: 1045px;
+    p {
+      font-size: 16pt;
+    }
+
+    .strategy {
+      margin: 0;
+    }
+
+    .marketing {
+      margin: 0 0 0 35px;
+    }
+
+    .technology {
+      margin: 0 0 0 34px;
+    }
+
+    .design {
+      margin: 0 -80px 0 32px;
+    }
+  }
+}
+
+.right-from {
+  background: $light-grey;
+
+  h1 {
+    font-size: 16pt;
+    text-align: center;
+    color: #626365;
+  }
+
+  @include breakpoint($ipad-portrait) {
+    h1 {
+      font-size: 30pt;
+      font-weight: 300;
+      margin: 80px auto;
+    }
+  }
+
+  @include breakpoint($ipad-landscape) {
+    h1 {
+      font-size: 30pt;
+      font-weight: 300;
+      margin: 80px auto;
+    }
+  }
+
+  @include breakpoint($desktops) {
+    h1 {
+      font-size: 35pt;
+      font-weight: 300;
+      margin: 80px auto;
+    }
+  }
+}
+
+.right-from-img {
+  background: $light-grey;
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.right-from-row {
+
+  h3 {
+    color: $light-blue;
+    font-weight: 400;
+  }
+
+  h4 {
+    color: #000;
+    font-size: 10pt;
+  }
+
+  p {
+    color: #585858;
+  }
+
+  @include breakpoint($ipad-portrait) {
+    text-align: left;
+
+    h3 {
+      font-size: 20pt;
+    }
+
+    h4 {
+      font-size: 16pt;
+      margin-bottom: 30px;
+      font-weight: 300;
+    }
+
+    p {
+      font-size: 16pt;
+      margin-bottom: 100px;
+    }
+  }
+
+  @include breakpoint($ipad-landscape) {
+    text-align: left;
+
+    h3 {
+      font-size: 20pt;
+    }
+
+    h4 {
+      font-size: 16pt;
+      margin-bottom: 30px;
+      font-weight: 300;
+    }
+
+    p {
+      font-size: 16pt;
+      margin-bottom: 100px;
+    }
+  }
+
+  @include breakpoint($desktops) {
+
+    h3 {
+      font-size: 20pt;
+    }
+
+    h4 {
+      font-size: 16pt;
+      margin-bottom: 30px;
+      font-weight: 300;
+    }
+
+    p {
+      font-size: 16pt;
+      margin-bottom: 100px;
+    }
+  }
+}
+
+.collab-creation {
+  background: #fff;
+}
+
+.collab-creation-img {
+  background: $light-blue;
+  img {
+    width: 100%;
+  }
+
+  @include breakpoint($desktops) {
+    img {
+      width: 800px;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+}
+
+.collab-creating-handle {
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 2px;
+  }
+
+  @include breakpoint($iphone-landscape) {
+    img {
+      width: 4px;
+    }
+  }
+
+  @include breakpoint($ipad-portrait) {
+    img {
+      width: 6px;
+    }
+  }
+
+  @include breakpoint($ipad-landscape) {
+    img {
+      width: 8px;
+    }
+  }
+
+  @include breakpoint($desktops) {
+    img {
+      width: 10px;
+    }
+  }
+
+}
+
+.through-every-img {
+  img {
+    padding: 20px 0;
+  }
+
+  @include breakpoint($iphone-landscape) {
+    img {
+      padding: 30px 0;
+    }
+  }
+
+  @include breakpoint($ipad-portrait) {
+    img {
+      padding: 50px 0;
+    }
+  }
+
+  @include breakpoint($ipad-landscape) {
+    img {
+      padding: 60px 0;
+    }
+  }
+
+  @include breakpoint($desktops) {
+    img {
+      padding: 50px 0;
+    }
+  }
+}
+
+.through-every-handle {
+  background: $light-grey;
+}
+
+.we-help {
+  @include breakpoint($ipad-portrait) {
+    margin-top: 50px;
+  }
+
+  @include breakpoint($ipad-landscape) {
+    margin-top: 50px;
+  }
+
+  @include breakpoint($desktops) {
+    margin-top: 50px;
+  }
+}
