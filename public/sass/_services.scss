@@ -129,6 +129,28 @@
 
   @include breakpoint($desktops) {
     height: 600px;
+    margin: -20px 0 0;
+
+    h1 {
+      font-size: 31pt;
+      margin: -543px auto 0;
+    }
+
+    p {
+      font-size: 19pt;
+      font-weight: 300;
+    }
+
+    span {
+      border: 3px solid #15acff;
+      margin: 6px 10px;
+    }
+
+    .always-core-list {
+      margin: 338px auto 0;
+      width: 981px;
+    }
+
   }
 }
 
