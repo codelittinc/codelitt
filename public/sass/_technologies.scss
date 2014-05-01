@@ -54,6 +54,19 @@
       font-size: 11pt;
     }
   }
+
+  @include breakpoint($ipad-portrait) {
+    padding-bottom: 364px;
+
+    h1 {
+      font-size: 26pt;
+      margin-top: -430px;
+    }
+
+    h2 {
+      font-size: 16pt;
+    }
+  }
 }
 
 .we-got-you {
@@ -91,6 +104,13 @@
   @include breakpoint($iphone4-landscape) {
     h1 {
       margin-top: -70px;
+    }
+  }
+
+  @include breakpoint($ipad-portrait) {
+    h1 {
+      font-size: 30pt;
+      margin: -111px 0 90px;
     }
   }
 }
