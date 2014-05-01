@@ -1,0 +1,39 @@
+// iphone 4
+// Aspect ratio is inverted for some add reason
+$iphone4-landscape: ('2/3' 'device-aspect-ratio')(orientation landscape);
+
+// Smartphones (landscape) -----------
+$iphone-landscape: (min-width 321px);
+
+// Smartphones (portrait) -----------
+$iphone-portrait: (max-width 320px);
+
+
+// iPads (landscape) -----------
+$ipad-landscape: (min-width 768px)
+                 (max-width 1024px)
+                 (orientation landscape);
+
+// iPads (portrait) -----------
+$ipad-portrait: (min-width 768px)
+                (max-width 1024px)
+                (orientation portrait);
+
+// Desktops and laptops -----------
+$desktops: (min-width 1025px);
+
+// Large screens -----------
+$big-screens: (min-width 1824px);
+
+// Color variables
+$codelitt-dark: #151c2d;
+$codelitt-light: #1d293e;
+$light-blue: #15acff;
+$light-grey: #f7f7f7;
+
+@import 'breakpoint';
+@import 'header';
+@import 'index';
+@import 'services';
+@import 'technologies';
+@import 'footer';

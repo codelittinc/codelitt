@@ -1,0 +1,183 @@
+.technologies {
+  background: $codelitt-light;
+  margin: -20px 0 0;
+  padding-bottom: 117px;
+  width: 100%;
+
+  h1,
+  h2 {
+    font-weight: 200;
+    margin: 0;
+    text-align: center;
+  }
+
+  h1 {
+    color: #9e9e9e;
+    font-size: 18pt;
+    margin: -180px 0 5px;
+  }
+
+  h2 {
+    color: #fff;
+    font-size: 11pt;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  @include breakpoint($iphone-landscape) {
+    padding-bottom: 263px;
+
+    h1 {
+      font-size: 20pt;
+      margin-top: -315px;
+    }
+
+    h2 {
+      font-size: 13pt;
+    }
+
+    img {
+      margin-top: 40px;
+    }
+  }
+
+  @include breakpoint($iphone4-landscape) {
+    padding-bottom: 210px;
+
+    h1 {
+      margin-top: -260px;
+    }
+
+    h2 {
+      font-size: 11pt;
+    }
+  }
+
+  @include breakpoint($ipad-portrait) {
+    padding-bottom: 364px;
+
+    h1 {
+      font-size: 26pt;
+      margin-top: -430px;
+    }
+
+    h2 {
+      font-size: 16pt;
+    }
+  }
+
+  @include breakpoint($ipad-landscape) {
+    padding-bottom: 516px;
+
+    h1 {
+      font-size: 30pt;
+      margin-top: -600px;
+    }
+
+    h2 {
+      font-size: 24pt;
+    }
+  }
+
+  @include breakpoint($desktops) {
+    padding-bottom: 351px;
+
+    h1 {
+      font-size: 30pt;
+      margin-top: -435px;
+    }
+
+    h2 {
+      font-size: 24pt;
+    }
+
+    img {
+      width: 750px;
+      display: block;
+      margin: 60px auto 0;
+    }
+  }
+}
+
+.we-got-you {
+  background: #fff;
+  margin-top: 10px;
+
+  img {
+    width: 100%;
+  }
+
+  h1 {
+    color: #585858;
+    font-weight: 200;
+    font-size: 18pt;
+    text-align: center;
+    margin: -50px 0 17px;
+  }
+
+  h3 {
+    color: $light-blue;
+  }
+
+  p {
+    color: #585858;
+  }
+
+  @include breakpoint($iphone-landscape) {
+    margin-top: 30px;
+
+    h1 {
+      margin: -85px 0 60px;
+    }
+  }
+
+  @include breakpoint($iphone4-landscape) {
+    h1 {
+      margin-top: -70px;
+    }
+  }
+
+  @include breakpoint($ipad-portrait) {
+    h1 {
+      font-size: 30pt;
+      margin: -111px 0 90px;
+    }
+  }
+
+  @include breakpoint($ipad-landscape) {
+    margin-top: 60px;
+    padding-bottom: 80px;
+
+    h1 {
+      font-size: 35pt;
+      margin: -140px 0 100px;
+    }
+  }
+
+  @include breakpoint($desktops) {
+    margin-top: 60px;
+    padding-bottom: 80px;
+
+    h1 {
+      font-size: 35pt;
+      margin: -170px 0 150px;
+    }
+
+    h3 {
+      font-size: 22pt;
+    }
+
+    h4 {
+      font-size: 17pt;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 16pt;
+    }
+
+  }
+
+}
