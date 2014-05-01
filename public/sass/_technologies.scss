@@ -67,6 +67,19 @@
       font-size: 16pt;
     }
   }
+
+  @include breakpoint($ipad-landscape) {
+    padding-bottom: 516px;
+
+    h1 {
+      font-size: 30pt;
+      margin-top: -600px;
+    }
+
+    h2 {
+      font-size: 24pt;
+    }
+  }
 }
 
 .we-got-you {
@@ -111,6 +124,16 @@
     h1 {
       font-size: 30pt;
       margin: -111px 0 90px;
+    }
+  }
+
+  @include breakpoint($ipad-landscape) {
+    margin-top: 60px;
+    padding-bottom: 80px;
+
+    h1 {
+      font-size: 35pt;
+      margin: -140px 0 100px;
     }
   }
 }
