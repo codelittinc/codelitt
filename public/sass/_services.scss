@@ -340,6 +340,30 @@
       margin: 0 -80px 0 32px;
     }
   }
+
+  @include breakpoint($desktops) {
+    margin-bottom: 100px;
+    width: 1045px;
+    p {
+      font-size: 16pt;
+    }
+
+    .strategy {
+      margin: 0;
+    }
+
+    .marketing {
+      margin: 0 0 0 35px;
+    }
+
+    .technology {
+      margin: 0 0 0 34px;
+    }
+
+    .design {
+      margin: 0 -80px 0 32px;
+    }
+  }
 }
 
 .right-from {
