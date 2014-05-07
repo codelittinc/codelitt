@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Codelitt</title>
+  <!-- Add jquery support -->
+  <script src="//code.jquery.com/jquery-2.1.0.min.js"></script>
+  <!-- Add Bootstrap Support -->
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <!-- Responsive tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Local stylesheets -->
+  <link rel="stylesheet" type="text/css" href="stylesheets/application.css">
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+  <%= favicon_link_tag 'favicon.ico' %>
+</head>
+<body>
+<%= render "layouts/header" %>
+<%= yield %>
+<%= render "layouts/footer" %>
+</body>
+</html>

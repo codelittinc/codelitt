@@ -1,88 +1,66 @@
-require 'rvm/capistrano'
-require 'bundler/capistrano'
+# config valid only for Capistrano 3.1
+lock '3.2.1'
 
-#RVM and bundler settings
-set :bundle_cmd, "/home/deploy/.rvm/gems/ruby-2.1.1@global/bin/bundle"
-set :bundle_dir, "/home/deploy/.rvm/gems/ruby-2.1.1/gems"
-set :rvm_ruby_string, :local
-set :rack_env, :production
+set :application, 'codelitt'
+set :repo_url, 'git@github.com:codelittinc/codelitt.git'
 
-#general info
+# Default value for :scm is :git
+set :scm, :git
+
+# Default value for :format is :pretty
+set :format, :pretty
+
+# Default value for :pty is false
+set :pty, true
+
 set :user, 'deploy'
-set :domain, '107.170.33.213'
-set :applicationdir, "/var/www/codelitt"
-set :scm, 'git'
-set :application, "codelitt"
-set :repository,  "git@github.com:codelitt/codelitt.git"
-set :branch, 'master'
-set :git_shallow_clone, 1
-set :scm_verbose, true
-set :deploy_via, :remote_cache
 
-role :web, domain                          # Your HTTP server, Apache/etc
-role :app, domain                          # This may be the same as your `Web` server
-role :db,  domain, :primary => true # This is where Rails migrations will run
-#role :db,  "your slave db-server here"
-#deploy config
-set :deploy_to, applicationdir
-set :deploy_via, :export
+set :ssh_options, { :forward_agent => true }
 
-#addition settings. mostly ssh
-ssh_options[:forward_agent] = true
-ssh_options[:keys] = [File.join(ENV["HOME"], ".ssh", "id_rsa")]
-ssh_options[:paranoid] = false
-default_run_options[:pty] = true
-# if you want to clean up old releases on each deploy uncomment this:
-# after "deploy:restart", "deploy:cleanup"
+# Default value for :linked_files is []
+set :linked_files, %w{config/database.yml}
 
-# if you're still using the script/reaper helper you will need
-# these http://github.com/rails/irs_process_scripts
+# Default value for linked_dirs is []
+set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system db}
 
-# After an initial (cold) deploy, symlink the app and restart nginx
-after "deploy:cold" do
-  admin.nginx_restart
-end
-
-before "deploy:restart" do
-  symlinkassets.symlink
-end 
-
-# As this isn't a rails app, we don't start and stop the app invidually
 namespace :deploy do
-  desc "Not starting as we're running passenger."
-  task :start do
+
+  desc 'Restart application'
+  task :restart do
+    on roles(:app), in: :sequence, wait: 5 do
+      # Restart passenger by creating the restart.txt file
+      execute :touch, release_path.join('tmp/restart.txt')
+    end
   end
 
-  desc "Not stopping as we're running passenger."
-  task :stop do
+  after :publishing, :restart
+
+  after :restart, :clear_cache do
+    on roles(:web), in: :groups, limit: 3, wait: 10 do
+      # Here we can do anything such as:
+      # within release_path do
+      #   execute :rake, 'cache:clear'
+      # end
+    end
   end
 
-  desc "Restart the app."
-  task :restart, roles: :app, except: { :no_release => true } do
-    run "touch #{File.join(current_path,'tmp','restart.txt')}"
-  end
+end
 
-  # This will make sure that Capistrano doesn't try to run rake:migrate (this is not a Rails project!)
-  task :cold do
-    deploy.update
-    deploy.start
+namespace :compass do
+  desc 'Compile Sass to CSS'
+  task :compile do
+    on roles(:web) do
+      within "#{fetch(:deploy_to)}/current/" do
+        with rails_env: fetch(:env) do
+          execute :bundle, :exec, 'compass compile'
+        end
+      end
+    end
   end
 end
 
+# Compile stylesheets before server restarts
+before "deploy:restart", "compass:compile"
 
-namespace :admin do
-  desc "Restart nginx."
-  task :nginx_restart, roles: :app do
-    run "#{sudo} /etc/init.d/nginx restart"
-  end
-end
-
-#symlink css assets from app folder to public folder
-namespace :symlinkassets do
-  desc "symlink css assets"
-  task :symlink do
-    run "rm -rf #{release_path}/public"
-    run "mkdir -p #{release_path}/public"
-    run "ln -s #{release_path}/app/* #{release_path}/public/"
-  end
-end
+# After restart migrate and compile assets
+after 'deploy:restart', 'deploy:migrate', 'deploy:compile_assets'

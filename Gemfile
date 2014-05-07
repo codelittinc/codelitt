@@ -1,18 +1,56 @@
 source 'https://rubygems.org'
 
-gem 'sinatra', '~>1.4.3', :require => 'sinatra/base'
-gem 'sinatra-activerecord', '~> 1.2.3'
-#gem 'pg', '~> 0.16.0'
-gem 'sinatra-assetpack', '~> 0.3.2', :require => 'sinatra/assetpack'
-gem 'slim', '~> 2.0.1'
-gem 'capistrano', '~> 2.15.5'
-gem 'rvm-capistrano', '~> 1.3.3'
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'rails', '4.0.4'
 
-group :development do
-  gem 'thin', '~> 1.5.1'
+# Use sqlite3 as the database for Active Record
+gem 'sqlite3'
+
+# Use SCSS for stylesheets
+gem 'sass', '3.3'
+
+# Use compass for awesomeness
+gem 'compass'
+
+# Use Breakpoint for media queries
+gem 'breakpoint', '~> 2.4.0'
+
+# Use Uglifier as compressor for JavaScript assets
+gem 'uglifier', '>= 1.3.0'
+
+# Use CoffeeScript for .js.coffee assets and views
+gem 'coffee-rails', '~> 4.0.0'
+
+# See https://github.com/sstephenson/execjs#readme for more supported runtimes
+# gem 'therubyracer', platforms: :ruby
+
+# Use jquery as the JavaScript library
+gem 'jquery-rails'
+
+# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
+gem 'turbolinks'
+
+# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+gem 'jbuilder', '~> 1.2'
+
+group :doc do
+  # bundle exec rake doc:rails generates the API under doc/api.
+  gem 'sdoc', require: false
 end
 
-group :test do
-  gem 'rspec', '~> 2.14.1'
-  gem 'capybara', '~> 2.1.0'
-end
+# Use ActiveModel has_secure_password
+# gem 'bcrypt', '~> 3.1.7'
+
+# Use unicorn as the app server
+# gem 'unicorn'
+
+#Use haml instead of html
+gem 'haml'
+
+# Use Capistrano for deployment
+gem 'capistrano', group: :development
+gem 'capistrano-rvm'
+gem 'capistrano-rails', '~> 1.1'
+
+# Use debugger
+# gem 'debugger', group: [:development, :test]
