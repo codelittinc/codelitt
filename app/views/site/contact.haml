@@ -1,9 +1,57 @@
 .container.contact-container
   %h1
-    Want to work together?
-  %h4
-    email us at
-  %h2
-    hello@codelitt.com
+    Want to work together? Let's chat
+  .container-fluid.top
 
-  = image_tag("contact/Contact-Graphic.svg", :alt => "contact-img")
+    = form_tag "/contact", method: "post", remote: true, class: "email-form" do
+      .required.text
+        * Required fields
+      .row
+        .col-xs-12.col-md-6.inputs
+          = image_tag "contact/Codelitt-site-Contact-Name.svg", class: "input-icon"
+          %span.required.asterisk.name
+            *
+          = text_field_tag "name", "", placeholder: "Name", required: true
+
+          = image_tag "contact/Codelitt-site-Contact-Work.svg", class: "input-icon"
+          = text_field_tag "occupation", "", placeholder: "Occupation"
+
+          = image_tag "contact/Codelitt-site-Contact-Email.svg", class: "input-icon"
+          %span.required.asterisk.email
+            *
+          = email_field "email", "", placeholder: "Email", required: true
+
+          = image_tag "contact/Codelitt-site-Contact-Phone.svg", class: "input-icon"
+          = telephone_field "phone", "", placeholder: "Phone"
+        .col-xs-12.col-md-6.area
+          = image_tag "contact/Codelitt-site-Contact-Message.svg", class: "input-icon"
+          = text_area_tag "message", "", placeholder: "Great looking website!"
+        .col-xs-12
+          = submit_tag "Get in touch", id: "submit"
+
+  .container-fluid.bottom
+    .row
+      .col-xs-12.col-md-6.info
+        %h4.hq
+          Headquarters
+
+        .row
+          .col-xs-6
+            %ul
+              %li 331 NW 26th St.
+              %li Suite 305
+              %li Miami, FL 33127
+          .col-xs-6
+            %ul
+              %li
+                = image_tag "contact/Codelitt-site-Contact-HQ-phone.svg", class: "input-icon"
+                %a{href: "tel:+19177254119"}
+                  +1.917.725.4119
+              %li
+                &nbsp;
+              %li
+                = image_tag "contact/Codelitt-site-Contact-HQ-email.svg", class: "input-icon"
+                hello@codelitt.com
+      .col-xs-12.col-md-6.map
+
+        %iframe{:frameborder => "0", :src => "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d898.0151754247261!2d-80.20165430059976!3d25.80157140005518!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b6b300ae5e87%3A0xd6d45ed9c33cfc72!2s331+NW+26th+St%2C+Miami%2C+FL+33127%2C+USA!5e0!3m2!1sen!2s!4v1420648156327", :style => "border:0"}
