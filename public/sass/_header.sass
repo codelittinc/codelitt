@@ -1,0 +1,37 @@
+.codelitt-head
+  background: $codelitt-dark
+  border: 0
+  border-bottom: 2px
+  border-color: #4f5052
+  border-radius: 0
+  border-style: solid
+  +breakpoint($ipad-landscape)
+    min-height: 90px
+
+.codelitt-logo img
+  margin: -10px
+  width: 40px
+  +breakpoint($ipad-landscape)
+    margin: auto
+    width: auto
+
+  +breakpoint($ipad-portrait)
+    margin: auto
+    width: 80%
+
+  +breakpoint($desktops)
+    margin: auto
+    width: 100%
+
+#nav-right
+  li
+    margin-top: 5%
+  a
+    color: #14a6fa
+  +breakpoint($ipad-portrait)
+    ul
+      margin: -1% -2% 1% 0
+
+  +breakpoint($desktops)
+    ul
+      margin: 0 0 1%
