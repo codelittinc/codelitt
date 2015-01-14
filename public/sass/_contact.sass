@@ -108,9 +108,27 @@
       border: 1px solid #29b2e2
 
   .bottom
+    height: 321px
+
+    .row
+      height: 100%
+
     .info
       background: #1b2e46
       padding-bottom: 5em
+      height: 100%
+
+      &:before
+        content: ""
+        height: 100%
+        display: block
+        width: 5px
+        position: absolute
+        left: 0
+        background-image: -moz-linear-gradient(top, #45e3d9, #17b1ff)
+        background-image: -webkit-linear-gradient(top, #45e3d9, #17b1ff)
+        background-image: linear-gradient(to bottom top, #45e3d9, #17b1ff)
+
       .hq
         color: #1fe5da
         text-align: left
@@ -136,7 +154,7 @@
 
     .map
       padding: 0
-      height: 321px
+      height: 100%
       iframe
         width: 100%
         height: 100%
