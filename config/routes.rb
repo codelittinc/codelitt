@@ -7,6 +7,7 @@ Codelitt::Application.routes.draw do
  get 'services' => 'site#services'
  get 'technologies' => 'site#technologies'
  get 'contact' => 'site#contact'
+ post 'contact' => 'site#email'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
