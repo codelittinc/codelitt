@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Codelitt::Application.config.secret_key_base = '5fd7605a3962e433fb455837bbe5c29b9ba8d8a9910b1df22c1816ffc9d1e175cd202aaeb87842026c80968cb8d33a4abaf2a4f32526f49096e863f60dc507fa'
+Codelitt::Application.config.secret_key_base = ENV['SECRET_KEY']

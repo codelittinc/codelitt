@@ -1,5 +1,9 @@
 require File.expand_path('../boot', __FILE__)
 
+if File.exists?("#{File.dirname(__FILE__)}/passwords.rb")
+  require "#{File.dirname(__FILE__)}/passwords"
+end
+
 require 'rails/all'
 
 # Require the gems listed in Gemfile, including any gems
