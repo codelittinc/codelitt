@@ -8,21 +8,25 @@
         * Required fields
       .row
         .col-xs-12.col-md-6.inputs
-          = image_tag "contact/Codelitt-site-Contact-Name.svg", class: "input-icon"
-          %span.required.asterisk.name
-            *
-          = text_field_tag "name", "", placeholder: "Name", required: true
+          .name-input
+            = image_tag "contact/Codelitt-site-Contact-Name.svg", class: "input-icon"
+            %span.required.asterisk.name
+              *
+            = text_field_tag "name", "", placeholder: "Name", required: true
 
-          = image_tag "contact/Codelitt-site-Contact-Work.svg", class: "input-icon"
-          = text_field_tag "occupation", "", placeholder: "Occupation"
+          .work-input
+            = image_tag "contact/Codelitt-site-Contact-Work.svg", class: "input-icon"
+            = text_field_tag "occupation", "", placeholder: "Occupation"
 
-          = image_tag "contact/Codelitt-site-Contact-Email.svg", class: "input-icon"
-          %span.required.asterisk.email
-            *
-          = email_field "email", "", placeholder: "Email", required: true
+          .email-input
+            = image_tag "contact/Codelitt-site-Contact-Email.svg", class: "input-icon"
+            %span.required.asterisk.email
+              *
+            = email_field "email", "", placeholder: "Email", required: true
 
-          = image_tag "contact/Codelitt-site-Contact-Phone.svg", class: "input-icon"
-          = telephone_field "phone", "", placeholder: "Phone"
+          .phone-input
+            = image_tag "contact/Codelitt-site-Contact-Phone.svg", class: "input-icon"
+            = telephone_field "phone", "", placeholder: "Phone"
         .col-xs-12.col-md-6.area
           = image_tag "contact/Codelitt-site-Contact-Message.svg", class: "input-icon"
           = text_area_tag "message", "", placeholder: "Great looking website!"

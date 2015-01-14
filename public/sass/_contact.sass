@@ -28,7 +28,6 @@
     width: 40px
     height: 40px
     position: absolute
-    left: -25px
 
   .email-form
     position: relative
@@ -47,11 +46,12 @@
       display: block
 
       &.name
-        left: 2px
-        top: 3px
+        left: -11px
+        top: -5px
 
       &.email
-        left: 5px
+        left: -10px
+        top: -7px
 
     .row
       height: 100%
@@ -63,10 +63,20 @@
           border-bottom: solid 1px #c8c8c8
           margin-bottom: 3em
           outline: none
+          padding: 0 0 10px 10px
+          &:focus
+            border-color: #29b2e2
+        > div
+          position: relative
+          img
+            margin-left: -40px
+            top: -10px
+
       .area
         height: 100%
         .input-icon
           top: -12px
+          left: -25px
         textarea
           height: 85%
           width: 100%
@@ -74,6 +84,7 @@
           border: 0
           outline: none
           background: #E0E0E0
+          padding: 5px 10px
 
   #submit
     outline: none
