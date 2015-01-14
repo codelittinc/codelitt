@@ -1,0 +1,162 @@
+.contact-container
+  margin-top: -20px
+  h1,
+  h2,
+  h4
+    text-align: center
+    font-weight: 300
+  h1,
+  h4
+    color: #585858
+  h1
+    font-size: 19pt
+    margin-bottom: 1em
+  h2
+    font-size: 19pt
+    color: $light-blue
+    margin-top: 0
+  h4
+    font-size: 15pt
+  img
+    width: 100%
+
+  .container-fluid
+    &.top
+      margin-bottom: 6em
+
+  .input-icon
+    width: 40px
+    height: 40px
+    position: absolute
+    left: -25px
+
+  .email-form
+    position: relative
+    height: 280px
+    width: 75%
+    margin: 0 auto
+
+    .required
+      color: #29b2e2
+      &.text
+        margin-bottom: 1em
+        text-align: right
+
+    .asterisk
+      position: absolute
+      display: block
+
+      &.name
+        left: 2px
+        top: 3px
+
+      &.email
+        left: 5px
+
+    .row
+      height: 100%
+
+      .inputs
+        input
+          width: 90%
+          border: 0
+          border-bottom: solid 1px #c8c8c8
+          margin-bottom: 3em
+          outline: none
+      .area
+        height: 100%
+        .input-icon
+          top: -12px
+        textarea
+          height: 85%
+          width: 100%
+          resize: none
+          border: 0
+          outline: none
+          background: #E0E0E0
+
+  #submit
+    outline: none
+    margin: 0 auto
+    display: block
+    text-transform: uppercase
+    border: 1px solid #29b2e2
+    color: white
+    background: #29b2e2
+    border-radius: 100px
+    padding: 7px 40px
+    font-size: 20px
+    font-weight: lighter
+    letter-spacing: 2px
+    +single-transition(all, 0.5s)
+
+    &:hover
+      background: white
+      color: #29b2e2
+      text-decoration: none
+      border: 1px solid #29b2e2
+
+  .bottom
+    .info
+      background: #1b2e46
+      padding-bottom: 5em
+      .hq
+        color: #1fe5da
+        text-align: left
+        margin-left: 1em
+        font-weight: lighter
+        margin-bottom: 2em
+        margin: 1em 1em 1.5em
+        letter-spacing: 2px
+      ul
+        li
+          color: #fff
+          list-style: none
+          font-size: 22px
+          font-weight: lighter
+          letter-spacing: 1px
+          position: relative
+          img
+            left: -45px
+            top: -5px
+          a
+            text-decoration: none
+            color: #fff
+
+    .map
+      padding: 0
+      height: 321px
+      iframe
+        width: 100%
+        height: 100%
+
+
+  +breakpoint($ipad-portrait)
+    margin-top: 100px
+    h1,
+    h2
+      font-size: 26pt
+    h4
+      font-size: 22pt
+
+  +breakpoint($ipad-landscape)
+    margin-top: 25px
+    h1,
+    h2
+      font-size: 30pt
+    h2
+      margin-bottom: -70px
+    h4
+      font-size: 26pt
+
+  +breakpoint($desktops)
+    margin-top: 5%
+    h1,
+    h2
+      font-size: 35pt
+    h4
+      font-size: 31pt
+    img
+      width: 80%
+      display: block
+      margin: 0 auto
