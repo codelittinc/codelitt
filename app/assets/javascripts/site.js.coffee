@@ -13,7 +13,7 @@ $(document).ready ->
     value = e.target.value
     if value != ""
       # Blue
-      $(e.target).css("border-color", "#29b2e2")
+      $(e.target.parentNode).addClass('input--filled')
       return
     # Grey
-    $(e.target).css("border-color", "#c8c8c8")
+    $(e.target.parentNode).removeClass('input--filled')

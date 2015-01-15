@@ -8,25 +8,38 @@
         * Required fields
       .row
         .col-xs-12.col-md-6.inputs
-          .name-input
+          .input-wrapper
             = image_tag "contact/Codelitt-site-Contact-Name.svg", class: "input-icon"
             %span.required.asterisk.name
               *
-            = text_field_tag "name", "", placeholder: "Name", required: true
 
-          .work-input
+            .input.input--hoshi
+              = text_field_tag "name", "", placeholder: "Name", required: true, class: "input__field input__field--hoshi"
+              = label_tag "name", "", class: "input__label input__label--hoshi input__label--hoshi-color"
+
+          .input-wrapper
             = image_tag "contact/Codelitt-site-Contact-Work.svg", class: "input-icon"
-            = text_field_tag "company", "", placeholder: "Company"
 
-          .email-input
+            .input.input--hoshi
+              = text_field_tag "company", "", placeholder: "Company", class: "input__field input__field--hoshi"
+              = label_tag "company", "", class: "input__label input__label--hoshi input__label--hoshi-color"
+
+          .input-wrapper
             = image_tag "contact/Codelitt-site-Contact-Email.svg", class: "input-icon"
             %span.required.asterisk.email
               *
-            = email_field "email", "", placeholder: "Email", required: true
 
-          .phone-input
+            .input.input--hoshi
+              = email_field "email", "", placeholder: "Email", required: true,class: "input__field input__field--hoshi"
+              = label_tag "email", "", class: "input__label input__label--hoshi input__label--hoshi-color"
+
+          .input-wrapper
             = image_tag "contact/Codelitt-site-Contact-Phone.svg", class: "input-icon"
-            = telephone_field "phone", "", placeholder: "Phone"
+
+            .input.input--hoshi
+              = telephone_field "phone", "", placeholder: "Phone", class: "input__field input__field--hoshi"
+              = label_tag "phone", "", class: "input__label input__label--hoshi input__label--hoshi-color"
+
         .col-xs-12.col-md-6.area
           = image_tag "contact/Codelitt-site-Contact-Message.svg", class: "input-icon"
           = text_area_tag "message", "", placeholder: "Great looking website!"

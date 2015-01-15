@@ -57,20 +57,30 @@
       height: 100%
 
       .inputs
-        input
-          width: 90%
-          border: 0
-          border-bottom: solid 1px #c8c8c8
-          margin-bottom: 3em
-          outline: none
-          padding: 0 0 10px 10px
-          &:focus
-            border-color: #29b2e2
-        > div
+        img
+          margin-left: -40px
+          top: -10px
+
+        .input-wrapper
           position: relative
-          img
-            margin-left: -40px
-            top: -10px
+        .input--hoshi
+          margin: 0
+          margin-bottom: 2.8em
+
+        .input__label--hoshi
+          position: relative
+
+        .input__field
+          padding: 0 0 10px 10px
+          font-weight: normal
+          margin-top: 0
+
+        .input__label--hoshi-color
+
+          &:after
+            border-width: 2px
+            border-color: #29b2e2
+            margin-top: 0
 
       .area
         height: 100%
@@ -158,7 +168,6 @@
       iframe
         width: 100%
         height: 100%
-
 
   +breakpoint($ipad-portrait)
     margin-top: 100px
