@@ -1,7 +1,7 @@
-.container.contact-container
+.container-fluid.contact-container
   %h1
     Want to work together? Let's chat
-  .container-fluid.top
+  .container.top
 
     = form_tag "/contact", method: "post", remote: true, class: "email-form" do
       .required.text
