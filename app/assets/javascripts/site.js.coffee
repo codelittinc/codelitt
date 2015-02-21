@@ -1,7 +1,8 @@
 # Place all the behaviors and hooks related to the matching controller here.
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
-$(document).ready ->
+ready =  ->
+  console.log "ready"
   # Handle form submit
   $("form").on "ajax:success", (e, data, status, xhr) ->
     alert "You have successfully contacted Codelitt."
@@ -17,3 +18,13 @@ $(document).ready ->
       return
     # Grey
     $(e.target.parentNode).removeClass('input--filled')
+
+  #Click event to scroll to top
+  $('.footer-back').click ->
+    $('html, body').animate { scrollTop: 0 }, 800
+    false
+
+
+
+$(document).ready(ready);
+$(document).on('page:load', ready);

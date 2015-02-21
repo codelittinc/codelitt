@@ -1,7 +1,11 @@
 .footer
   background: $codelitt-dark
+  padding: 4em 15px 3em
   p
     color: #626365
+    display: inline-block
+    margin-left: 35px
+    line-height: 4
   +breakpoint($ipad-portrait)
     width: auto
 
@@ -15,51 +19,29 @@
   display: none
   +breakpoint($ipad-portrait)
     display: block
-    p
-      margin: 60px 15px 0
-      float: left
-
   +breakpoint($ipad-landscape)
     display: block
-    p
-      margin: 60px 15px 0
-      float: left
-
   +breakpoint($desktops)
     display: block
-    p
-      margin: 60px 15px 0
-      float: left
-
 .footer-logo
   img
     display: block
-    margin: 20px auto
-  +breakpoint($ipad-portrait)
-    margin: -55px auto
-
-  +breakpoint($ipad-landscape)
-    margin: -55px auto
-
-  +breakpoint($desktops)
-    margin: -55px auto
-
+    margin: 0 auto
 .footer-back
   display: none
+  text-align: right
+  margin-left: -35px
+  cursor: pointer
   span
     color: $light-blue
   +breakpoint($ipad-portrait)
     display: block
-    margin: 50px 0 55px 550px
 
   +breakpoint($ipad-landscape)
     display: block
-    margin: 50px 0 55px 830px
 
   +breakpoint($desktops)
     display: block
-    float: right
-    margin: -28px 20px 50px
 
   span
     font-size: 14pt

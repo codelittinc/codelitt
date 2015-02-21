@@ -48,7 +48,7 @@ end
 gem 'haml'
 
 # Use Capistrano for deployment
-gem 'capistrano', group: :development
+gem 'capistrano', '~> 3.3.5', group: :development
 gem 'capistrano-rvm'
 gem 'capistrano-rails', '~> 1.1'
 
