@@ -7,16 +7,40 @@ Awesome company website!
 ## Installation
 
 - Create gemset
+
+      ```
       rvm use 2.1.1@codelitt --create
+      ```
 
 - Install gems
+
+      ```
       bundle install
+      ```
+      
+- Generate secret token
+
+      ```
+      rake secret
+      ```
+      
+- Put secret token in line 12 of config/initializers/secret_token.rb
+
+      ```
+      Codelitt::Application.config.secret_key_base = 'YOUR_TOKEN_HERE'
+      ```
 
 - Run the server
+
+      ```
       rails server
+      ```
 
 - Watch stylesheets for changes
+
+      ```
       compass watch
+      ```
 
 ## Setup
 - Breakpoint: http://breakpoint-sass.com/
