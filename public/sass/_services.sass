@@ -199,19 +199,19 @@
       margin: 0 0 0 60px
     .design
       margin: 0 -80px 0 50px
-
+  
   +breakpoint($ipad-landscape)
     margin-bottom: 100px
     p
       font-size: 14pt
     .strategy
-      margin: 0
+      margin: 0 0 0 -13px
     .marketing
-      margin: 0 0 0 35px
+      margin: 0 0 0 13px
     .technology
-      margin: 0 0 0 34px
+      margin: 0 0 0 16px
     .design
-      margin: 0 -80px 0 32px
+      margin: 0 -80px 0 14px
 
   +breakpoint($desktops)
     margin-bottom: 100px
@@ -226,6 +226,39 @@
       margin: 0 0 0 34px
     .design
       margin: 0 -80px 0 32px
+      
+  +breakpoint($md)
+    margin-bottom: 100px
+    width: 1045px
+    p
+      font-size: 16pt
+    .strategy
+      margin: 0 0 0 -40px
+    .marketing
+      margin: 0 0 0 -30px
+    .technology
+      margin: 0 0 0 -32px
+    .design
+      margin: 0 -80px 0 -37px
+
+  +breakpoint($lg)
+    margin-bottom: 100px
+    width: 1045px
+    p
+      font-size: 16pt
+    .strategy
+      margin: 0 0 0 -15px
+      width: unset
+    .marketing
+      margin: 0 0 0 60px
+      width: unset
+    .technology
+      margin: 0 0 0 29px
+      width: unset
+    .design
+      margin: 0 -80px 0 52px
+      width: unset
+
 
 .right-from
   background: $light-grey
