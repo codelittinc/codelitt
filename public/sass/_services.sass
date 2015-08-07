@@ -12,6 +12,7 @@
     text-align: center
     width: 45%
   .always-core-list
+    text-align: center
     margin: 94px auto 0
     width: 92%
   p
@@ -25,6 +26,7 @@
   img
     height: 100%
     width: 100%
+
   +breakpoint($iphone-landscape)
     height: 369px
     margin: -45px 0 -25px
@@ -72,10 +74,10 @@
       font-size: 31pt
       margin: -574px auto 0
     p
-      font-size: 19pt
+      font-size: 14pt
       font-weight: 300
     span
-      border: 3px solid #15acff
+      border: 3px solid $light-blue
       margin: 6px 10px
     .always-core-list
       margin: 324px auto 0
@@ -91,7 +93,7 @@
       font-size: 19pt
       font-weight: 300
     span
-      border: 3px solid #15acff
+      border: 3px solid $light-blue
       margin: 6px 10px
     .always-core-list
       margin: 338px auto 0
@@ -161,18 +163,21 @@
     display: inline-block
     font-size: 5pt
     width: 23%%
+
   +breakpoint($iphone-landscape)
+    width: 100%
+    margin: 0 -15px 0 -15px
     p
       font-size: 10pt
       text-align: center
     .strategy
-      margin: 0 0 0 -50px
+      margin: 0 0 0 -20px
     .marketing
-      margin: 0 0 0 38px
+      margin: 0 0 0 18px
     .technology
-      margin: 0 0 0 45px
+      margin: 0 0 0 25px
     .design
-      margin: 0 -50px 0 37px
+      margin: 0 -50px 0 22px
 
   +breakpoint($iphone4-landscape)
     p
@@ -187,37 +192,53 @@
     .design
       margin: 0 -50px 0 35px
 
+  //+breakpoint($iphone4-landscape)
+  //p
+  //  font-size: 10pt
+  //  text-align: center
+  //.strategy
+  //  margin: 0 0 0 -3px
+  //.marketing
+  //  margin: 0 0 0 11px
+  //.technology
+  //  margin: 0 0 0 8px
+  //.design
+  //  margin: 0 -50px 0 16px
+
   +breakpoint($ipad-portrait)
     margin-bottom: 100px
     p
       font-size: 14pt
+      text-align: center
     .strategy
-      margin: 0 0 0 -58px
+      margin: 0 0 0 -60px
     .marketing
-      margin: 0 0 0 60px
+      margin: 0 0 0 46px
     .technology
-      margin: 0 0 0 60px
+      margin: 0 0 0 45px
     .design
-      margin: 0 -80px 0 50px
+      margin: 0 -80px 0 45px
 
   +breakpoint($ipad-landscape)
     margin-bottom: 100px
     p
       font-size: 14pt
+      text-align: center
     .strategy
-      margin: 0
+      margin: 0 0 0 -16px
     .marketing
-      margin: 0 0 0 35px
+      margin: 0 0 0 16px
     .technology
-      margin: 0 0 0 34px
+      margin: 0 0 0 16px
     .design
-      margin: 0 -80px 0 32px
+      margin: 0 -80px 0 14px
 
   +breakpoint($desktops)
     margin-bottom: 100px
     width: 1045px
     p
       font-size: 16pt
+      text-align: center
     .strategy
       margin: 0
     .marketing
@@ -226,6 +247,41 @@
       margin: 0 0 0 34px
     .design
       margin: 0 -80px 0 32px
+      
+  +breakpoint($md)
+    margin-bottom: 100px
+    width: 1045px
+    p
+      font-size: 16pt
+      text-align: center
+    .strategy
+      margin: 0 0 0 -40px
+    .marketing
+      margin: 0 0 0 -30px
+    .technology
+      margin: 0 0 0 -32px
+    .design
+      margin: 0 -80px 0 -37px
+
+  +breakpoint($lg)
+    margin-bottom: 100px
+    width: 1045px
+    p
+      font-size: 16pt
+      text-align: center
+    .strategy
+      margin: 0 0 0 -15px
+      width: unset
+    .marketing
+      margin: 0 0 0 60px
+      width: unset
+    .technology
+      margin: 0 0 0 29px
+      width: unset
+    .design
+      margin: 0 -80px 0 52px
+      width: unset
+
 
 .right-from
   background: $light-grey

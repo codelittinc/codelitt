@@ -1,9 +1,9 @@
 // iphone 4
-// Aspect ratio is inverted for some add reason
+// Aspect ratio is inverted for some odd reason
 $iphone4-landscape: ("2/3" "device-aspect-ratio") (orientation landscape)
 
 // Smartphones (landscape) -----------
-$iphone-landscape: min-width 321px
+$iphone-landscape: (min-width 321px) (max-width 767px)
 
 // Smartphones (portrait) -----------
 $iphone-portrait: max-width 320px
@@ -19,6 +19,11 @@ $desktops: min-width 1025px
 
 // Large screens -----------
 $big-screens: min-width 1824px
+
+// Bootstrap sizes
+$sm: 768px
+$md: 992px
+$lg: 1200px
 
 // Color variables
 $codelitt-dark: #151c2d
