@@ -1,3 +1,8 @@
+# WARNING
+
+This repository has been discontinuated, our current website code is stored on: https://github.com/codelittinc/codelitt-v2
+
+
 Codelitt
 ==========
 
